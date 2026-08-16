@@ -1,0 +1,480 @@
+html {
+  font-size: 10px; /* px signifie 'pixels': la taille de base pour la police est désormais 10 pixels de haut  */
+  font-family: 'Open Sans', sans-serif; /* cela devrait être le reste du résultat obtenu à partir de Google fonts */
+}
+
+h1,h2 {
+  font-size: 25px; /* taille du titre */
+  text-align: right; /* center */
+}
+
+h1,h2 {
+  margin: 12px;
+  padding: 0px;
+  color: black; /* #00539F */
+  text-shadow: 1px 1px 0px; /* ombre horizontal vertical flou */
+}
+
+/* lié aux logos */
+img {
+  display: block;
+  /*margin: 0 auto; /* 0 auto marge */
+  margin-left: auto; /* 200px espace exterieur autour de l'element*/
+  margin-right:auto;
+  /*width: 17%; /* 25% agrandir ou diminuer */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* début du bandeau début logo */
+.containerlogos {
+  position: relative;
+  width: 100%; /* largeur 100px*/
+  height: 255px; /* hauteur 100px*/
+  /*border: 1px solid black;  contour */
+  margin-top: 20px; /* position haut et bas */
+}
+.logodebian { 
+  /*display: block;*/
+  position: absolute;
+  width: 40%; /* auto agrandir ou diminuer l'image */
+  margin-left: 98px; /* 200px espace exterieur autour de l'element*/
+  margin-right: auto;
+  margin-top: 2px; /*position haut, bas */
+}
+
+.logosymbole { 
+  position: absolute;
+  margin-left: 225px; /* 200px espace exterieur autour de l'element*/
+  margin-right: auto;
+  margin-top: 78px; /*position haut, bas */
+  font-size: 40px; /* taille */
+  color: #006699;
+  text-shadow: 1px 1px 0px; /* ombre horizontal vertical flou */
+}
+
+.logoxfce { 
+  position: absolute;
+  width: 40%; /* auto agrandir ou diminuer l'image */
+  margin-left: 288px; /* 200px espace exterieur autour de l'element*/
+  margin-right: auto;
+  margin-top: 34px; /*position haut, bas */
+}
+
+.logognu { 
+  /*display: block;*/
+  position: absolute;
+  width: 45%; /* auto agrandir ou diminuer l'image */
+  margin-left: 150px; /* 200px espace exterieur autour de l'element*/
+  margin-right: auto;
+  margin-top: 2px; /*position haut, bas */
+}
+
+.logotux { 
+  position: absolute;
+  width: 43%; /* auto agrandir ou diminuer l'image */
+  margin-left: 224px; /* 200px espace exterieur autour de l'element*/
+  margin-right: auto;
+  margin-top: 18px; /*position haut, bas */
+}
+
+
+/*fin bandeau logo*/
+
+
+p {
+  font-size: 15px; /* taille de la police */
+  line-height: 1.3; /* 2 */
+  letter-spacing: 1px;
+}
+
+li {
+  font-size: 15px;
+  line-height: 1.3; /* 2 */
+  letter-spacing: 1px;
+}
+
+/* gras des titres */
+.bold-titre {
+  font-weight: bolder; /* gras */
+  font-style:italic; /* style du texte */
+  font-size: 18px; /* taille de la police */
+  text-shadow: 1px 1px 1px black; /* augment le gras */
+  color: #006699;
+}
+
+/* gras des titres */
+.bold-titre1 {
+  font-weight: bolder; /* gras */
+  font-style:normal; /* style du texte */
+  font-size: 16px; /* taille de la police */
+  text-shadow: 0px 0px 0px black; /* augment le gras */
+  color: #006699;
+}
+
+html {
+  background-color: #00539F; /* #00539F contour bleu*/
+}
+
+/* mise en page du site */
+body {
+  width: 920px; /* 600 largeur de cadre orange */
+  margin: 0 auto;
+  background-color: #FF9500; /* #FF9500 cadre orange */
+  padding: 0 20px 20px 20px;
+  border: 5px solid black; /* 5 */
+}
+
+
+/* simple couche grand */
+.box1 { 
+  display: block;
+  margin: 0 auto; /* 0 auto marge */
+  margin-left: auto; /* 200px espace exterieur autour de l'element*/
+  margin-right:auto;
+  width: 700px; /* 700px auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* bandeau */
+.box1bis { 
+  display: block;
+  margin: 0 auto; /* 0 auto marge */
+  margin-left: auto; /* 200px espace exterieur autour de l'element*/
+  margin-right:auto;
+  width: 888px; /* 700px auto agrandir ou diminuer l'image */
+  height: 32px; /* hauteur */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+
+/* double couche petit  */
+.box2 {
+  display: block;
+  margin: 0 auto; /* 0 auto marge */
+  margin-left: 132px; /* 50px espace exterieur autour de l'element*/
+  margin-right:0px;
+  width: 500px; /* auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* simple couche petit */
+.box6 {
+  display: block;
+  margin-left: 235px; /* 50px espace exterieur autour de l'element*/  
+  margin-right:0px;
+  width: 200px; /* auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+ /* double couche grand */
+.box7 { 
+  display: block;
+  margin: 0 auto; /* 0 auto marge */
+  margin-left: 33px; /* 200px espace exterieur autour de l'element*/
+  margin-right:auto;
+  width: 700px; /* 700px auto agrandir ou diminuer l'image */
+  height: auto;
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+ /* double couche moyen */
+.box8 { 
+  display: block;
+  margin-left: 125px; /* 200px espace exterieur autour de l'element*/
+  margin-right:auto;
+  width: 500px; /* 700px auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* simple couche moyen */
+.box9 {
+  display: block;
+  margin-left: 195px; /* 50px espace exterieur autour de l'element*/
+  margin-right:0px;
+  width: 450px; /* auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* simple couche petit */
+.box10 {
+  display: block;
+  margin:  auto; /* 0 auto marge du haut et du bas */
+  margin-left: 270px; /* 50px espace exterieur autour de l'element*/
+  margin-right:auto;
+  width: 300px; /* auto agrandir ou diminuer l'image */
+}
+
+/* simple couche petit */
+.box11 {
+  display: block;
+  margin-left: 310px; /* 50px espace exterieur autour de l'element*/  
+  margin-right:0px;
+  width: 220px; /* auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* double couche */
+.box12 {
+  display: block;
+  margin-left: 105px; /* 50px espace exterieur autour de l'element*/  
+  margin-right:0px;
+  width: 550px; /* auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* double couche */
+.box13 {
+  display: block;
+  margin-left: 270px; /* 50px espace exterieur autour de l'element*/  
+  margin-right:0px;
+  width: 220px; /* auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* simple couche */
+.box14 { 
+  display: block;
+  margin:  auto; /* 0 auto marge du haut et du bas */
+  margin-left: 70px; /* gauche */
+  margin-right:auto; /* droite */
+  width: 700px; /* agrandir ou diminuer l'image */
+}
+
+
+ /* double couche grand */
+.box15 { 
+  display: block;
+  margin: 0 auto; /* 0 auto marge du haut et du bas */
+  margin-left: -50px; /* 200px espace exterieur autour de l'element*/
+  margin-right:auto;
+  width: 850px; /* 700px auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+
+/* simple couche */
+.box16 { 
+  display: block;
+  margin: 0 auto; /* 0 auto marge du haut et du bas */
+  margin-left: 225px; /* gauche */
+  margin-right:auto; /* droite */
+  width: 380px; /* agrandirclass="espace1" ou diminuer l'image */
+}
+
+/* simple couche */
+.box17 { 
+  display: block;
+  margin: 0 auto; /* 0 auto marge du haut et du bas */
+  margin-left: 280px; /* gauche */
+  margin-right:auto; /* droite */
+  width: 280px; /* agrandir ou diminuer l'image */
+}
+
+/* double couche */
+.box23 {
+  display: block;
+  margin-left: 200px; /* 50px espace exterieur autour de l'element*/  
+  margin-right:0px;
+  width: 350px; /* auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+
+/* icône */
+.box18 {
+  display: block;
+  /*margin-left: 50px; /* 200px espace exterieur autour de l'element*/
+  margin-left: 35px; /* 50px espace exterieur autour de l'element*/  
+  margin-right:0px;
+  width: 165px; /* auto agrandir ou diminuer l'image */
+  /*height: 200px; /* hauteur */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* icône */
+.box19 {synaptic_installation
+  display: block;
+  /*margin-left: 50px; /* 200px espace exterieur autour de l'element*/
+  margin-left: 35px; /* 50px espace exterieur autour de l'element*/  
+  margin-right:0px;
+  width: 55px; /* auto agrandir ou diminuer l'image */
+  /*height: class="espace1"200px; /* hauteur */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* icône */
+.box20 {
+  display: block;
+  /*margin-left: 50px; /* 200px espace exterieur autour de l'element*/
+  margin-left: 35px; /* 50px espace exterieur autour de l'element*/  
+  margin-right:0px;
+  width: 120px; /* auto agrandir ou diminuer l'image */
+  /*height: 200px; /* hauteur */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+
+
+/* page_contenu espace début paragraphe */
+.espace1 {
+  margin-top:40px;
+}
+
+/* page_contenu espace après image */
+.espace2 {
+  margin-top:30px;
+}
+
+/* page index espace paragraphe*/
+.espace3 {
+  margin-top:35px;
+}
+
+/* page index espace inter_paragraphe*/
+.espace4 {
+  margin-top:7px;
+}
+
+/* page index espace inter_paragraphe*/
+.espace5 {
+  margin-top:-10px;
+}
+
+/* page index espace inter_paragraphe*/
+.espace6 {
+  margin-top:2px;
+}
+
+
+/* Icône reseau aligne dans tableau_bord_xfce_n1 */
+.container1 {
+  position: relative;
+  width: 100%; /* largeur 100px*/
+  height: 55px; /* hauteur 100px*/
+  /*border: 1px solid black; */
+  margin-top: 30px; /* position haut et bas */
+}
+
+    /* icône */
+.box21 { 
+  display: block;
+  width: 60px; /* auto agrandir ou diminuer l'image */
+  margin-left: 15px; /* 200px espace exterieur autour de l'element*/
+  margin-right: auto;
+  float: left;
+}
+
+    /* image dans tableau_bord_xfce_n1 */
+.ou {
+  position: absolute;
+  margin-left: 0px; /* 200px espace exterieur autour de l'element*/
+  margin-right:0px;
+  top: 22px; /*position haut, bas */
+  font-size: 15px; /* taille */
+  /*color: /*#006699;*/
+}
+
+    /* icône */
+.box22 { 
+  display: block;
+  width: 55px; /* auto agrandir ou diminuer l'image */
+  margin-left: 40px; /* 200px espace exterieur autour de l'element*/
+  margin-right: auto;
+  float: left;
+}
+/* fin alignement icône réseau */
+
+
+
+/* bandeau de fin de page */
+.container {
+  position: relative;
+  width: 100%; /* largeur 100px*/
+  height: 50px; /* hauteur 100px*/
+  border: 1px solid black;
+  margin-top: 30px; /* position haut et bas */
+}
+    /* icône fin de page */
+.box3 { 
+  display: block;
+  width: 40px; /* auto agrandir ou diminuer l'image */
+  margin-left: 0px; /* 200px espace exterieur autour de l'element*/
+  margin-right: auto;
+  float: left;
+}
+.retour {
+  position: absolute;
+  margin-left: 45px; /* 200px espace exterieur autour de l'element*/
+  margin-right:0px;
+  top: 12px; /*position haut, bas */
+  font-size: 15px; /* taille */
+  color: #006699;
+}
+
+    /* icône fin de page */
+.box4 { 
+  display: block;
+  width: 40px; /* auto agrandir ou diminuer l'image */
+  margin-left: 200px; /* 200px espace exterieur autour de l'element*/
+  margin-right: auto;
+  float: left;
+}
+.accueil {
+  position: absolute;
+  margin-left: 146px; /* 200px espace exterieur autour de l'element*/
+  margin-right:0px;
+  top: 12px; /*position haut, bas */
+  font-size: 15px; /* taille */
+  color: #006699;
+}
+
+    /* icône fin de page */
+.box5 { 
+  display: block;
+  width: 40px; /* auto agrandir ou diminuer l'image */
+  margin-left: 300px; /* 200px espace exterieur autour de l'element*/
+  margin-right: auto;
+  float: left;
+}
+.suivant {
+  position: absolute;
+  margin-left: 243px; /* 200px espace exterieur autour de l'element*/
+  margin-right:0px;
+  top: 12px; /*position haut, bas */
+  font-size: 15px; /* taille */
+  color: #006699;
+}
+/* fin du bandeau de fin de page */ 
+
+
+
+/* style lien de page interne */
+.lienpage {
+  text-decoration: none; /* none Les liens ne seront plus soulignés */
+  /*color: ; /* red Les liens seront en rouge au lieu de bleu */
+  /*background-color: #FFFF00; /* encadré de couleur jaune */
+  /*font-weight: bold; /* gras */
+  font-style: normal; /* italic Les liens seront en italique */
+}
+
+
+
+/* position du curseur pour les liens */
+a:hover {
+    /*color: #0000FF */
+    text-decoration: underline; /* liens soulignés */
+    background-color: #FFFF00; /* encadré de couleur jaune */
+    /*font-weight: bold; /* gras */
+    font-style: italic; /* italic Les liens seront en italique */
+}
+
+
+/* déclaration de fin de page */
+.charte {
+ font-size: 12px; /* taille */
+}
+
+/* ... fin ...*/
+
+
+
