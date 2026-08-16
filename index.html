@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Débuter avec Debian et le bureau Xfce.</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+   </head>
+  
+<body>
+  <h1>GLICD</h1>
+  <h2></h2>
+<!-- debut logo -->
+   <div class="containerlogos">
+   <div class="logodebian">
+    <a href="https://www.debian.org/logos/" target="_blank">
+    <img class="logodebian" src="images/logos/openlogo.svg" title="https://www.debian.org/logos/"></a>
+   </div>
+  <div class="logosymbole">
+   <div class="logosymbole">&</div>
+  </div>
+   <div class="logoxfce">
+    <a href="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg" target="_blank">
+    <img class="logoxfce" src="images/logos/XFCE4Logo.svg" title="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg"></a>
+   </div>
+  </div>
+<!-- fin logo -->
+
+<!-- début de l'introduction -->
+  <p>Le but de ce site est d'installer et d'utiliser 
+			<span class="bold-titre">Debian</span> avec le bureau <span class="bold-titre">Xfce</span>.</p>
+  <p>Le site officiel <a href="https://www.debian.org" target="_blank" title="https://www.debian.org">Debian</a>
+     et le site officiel <a href="https://xfce.org" target="_blank" title="https://xfce.org">Xfce</a>.</p>
+
+  <p>Plus d'information : <a href="https://www.debian.org/intro/about" target="_blank" title="https://www.debian.org/intro/about">A propos de Debian</a> ou
+	 sur le<a class="lienpage" href="contenu/infolibre.html"> logiciel libre.</a></p>
+
+  <p class="espace2">Cette installation en mode graphique va permettre de :</p>
+        <ul>
+           <li>Naviguer sur internet avec <strong>Firefox</strong></li>
+           <li>Gérer les dossiers et fichiers avec <strong>Thunar</strong></li>
+           <li>Faire de la bureautique avec <strong>LibreOffice</strong></li>
+	   <li>Visionner des documents avec <strong>Atril</strong></li>
+	   <li>Ecouter de la musique avec <strong>QuodLibet</strong> ou <strong>Parole</strong></li>
+           <li>Visionner des photos avec <strong>Ristretto</strong> ou <strong>EyeOfGnome (eog)</strong></li>
+	   <li>Lire des CD avec <strong>Clementine</strong> ou <strong>VLC</strong></li>
+           <li>Lire des DVD avec <strong>Videos</strong> ou <strong>VLC</strong></li>
+           <li>Réceptionner et envoyer des Emails avec <strong>Thunderbird</strong></li>
+	   <li>Connecter un appareil extérieur : Imprimante, scanner, smartphone, ...</li>
+           <li>Et plus encore...</li>
+       </ul>
+
+  <p>En espérant que ce mémo sera utile et facile à comprendre.</p>
+<!-- fin de l'introduction --> 
+
+
+<!-- Installation -->
+  <p class="espace3" id="chapitre_installation"><span class="bold-titre">Installation stable de Debian GNU/Linux 12 (bookworm) 
+												avec le bureau XFCE</span></p>
+
+ <p>Pour ce mémo, un PC de 64 bits (amd64) et de 32 bits (i386) ont été utilisés.<br />
+    L'installation a été faite avec un support d'installation.<br />
+    Exemple de support d'installation : 1 cd ou 1 dvd ou 1 clé usb.<br />
+    Avant de commencer, le PC doit être raccordé à internet. Ceci va permettre de configurer automatiquement la connexion
+    et de  télécharger un maximum de paquets lors de l'installation.</p>
+
+  <ol type="1">
+     <li>Installation stable de <a class="lienpage" href="contenu/installation.html">Debian GNU/Linux 12 (bookworm) 
+												avec le bureau XFCE</a></li>
+     <li id="après_installation" class="espace3">Après l'installation, configurer les sources de Apt (advanced package tool)</li>
+        <ul>
+           <li class="espace4">En mode graphique en utilisant <a class="lienpage" href="contenu/synaptic_installation.html">Synaptic</a></li>
+           <li class="espace4">Ou en mode console en utilisant  <a class="lienpage" href="contenu/terminal_installation.html">
+											l'Emulateur de terminal</a></li>
+	   <li class="espace4">Ensuite vérifier les changements des sources de Apt en utilisant 
+						   <a class="lienpage" href="contenu/verifier_liste.html">Mousepad</a></li>   
+        </ul>
+     <li class="espace3"> Les applications sont organisées sous forme de <strong>paquets</strong><br />
+	    Ajouter des paquets pour plus de fonctionnalités, 
+			<a class="lienpage" href="contenu/liste_paquets.html">la liste des paquets à ajouter</a></li>
+  </ol>
+<!-- fin installation --> 
+
+
+<!-- utilisation -->
+<p id="chapitre_utilisation" class="espace1"><span class="bold-titre">Utilisation de Debian et du bureau XFCE</span></p>
+
+<p>Ce chapitre est une initiation à Debian avec le bureau Xfce (pour débutantes et débutants).<br /> 
+     Lire les documentations et prendre son temps.</p>
+
+  <ol type="1">
+
+    <li id="lasouris">Rappel de l'utilisation de <a class="lienpage" href="contenu/lasouris.html">la souris et du clavier</a></li>
+    <li id="environnement" class="espace3">Environnement de bureau Xfce</li>
+      <ul>
+        <li class="espace4"><a class="lienpage" href="contenu/bureauxfce.html">Environnement de bureau Xfce</a></li>
+        <li class="espace4">Description du <a class="lienpage" href="contenu/tableau_bord_xfce_n1.html">tableau de bord 1</a></li>
+          <ul>
+            <li><a class="lienpage" href="contenu/menu_application.html">Le menu</a> des Applications</li>
+            <li><a class="lienpage" href="contenu/espace_travail.html">Espaces</a> de travail</li>
+            <li>Les réseaux, se rendre au chapitre : <a class="lienpage" href="#reseau">Les périphériques réseaux (Internet)</a></li>
+            <li><a class="lienpage" href="contenu/son.html">Le son</a></li>
+            <li><a class="lienpage" href="contenu/alimentation.html">Le gestionnaire</a> d'alimentation du PC</li>
+            <li><a class="lienpage" href="contenu/notification.html">Notifications et l'horloge</a></li>
+            <li><a class="lienpage" href="contenu/bouton_action.html">Le bouton</a> d'action</li>
+          </ul> 
+        <li class="espace4">Description du <a class="lienpage" href="contenu/tableau_bord_xfce_n2.html">tableau de bord 2</a></li>
+      </ul>
+
+    <li class="espace3" id="ouvrir">Ouvrir une application</li>
+      <ul>
+	<li class="espace4"><a class="lienpage" href="contenu/ouvrir_application.html">Ouvrir</a> une application</li>
+      </ul>
+
+    <li class="espace3" id="ajout_raccourcis">Les raccourcis sur le bureau</li>
+      <ul>
+<li class="espace4"><a class="lienpage" href="contenu/ajout_raccourcis.html">Ajout</a> de raccourcis d'une application
+												sur le bureau</li>
+<li class="espace4"><a class="lienpage" href="contenu/ouvrir_application_bureau.html">Ouvrir</a> une application à partir 
+                                                                                        du raccourci du bureau</li>
+<li class="espace4"><a class="lienpage" href="contenu/suppression_raccourcis.html">Suppression</a> de raccourcis 
+                                                                                                     sur le bureau</li>
+      </ul>
+
+    <li  class="espace3" id="gestionnaire_thunar">Gestionnaire de fichiers avec Thunar</li>
+      <ul>
+        <li class="espace4">Le gestionnaire de fichiers <a class="lienpage" href="contenu/fichiers.html">Thunar</a></li>
+	<li class="espace4"><a class="lienpage" href="contenu/changer_affichage.html">Changer</a> l'affichage</li>
+        <li class="espace4"><a class="lienpage" href="contenu/ajout_dossiers.html">Ajouter</a> un dossier</li>
+	<li class="espace4"><a class="lienpage" href="contenu/sedeplacer_fichiers.html">Se déplacer</a> dans le gestionnaire de fichiers</li>
+        <li class="espace4">Ouvrir un fichier</li>
+	 <ul>
+  <li class="espace4">Double <a class="lienpage" href="contenu/ouvrir_clic.html">clic</a></li>
+  <li class="espace4">Ouvrir <a class="lienpage" href="contenu/ouvrir_avec.html">avec</a></li>
+  <li class="espace4">Ouvrir avec une <a class="lienpage" href="contenu/ouvrir_autre.html">autre</a> application</li>
+	</ul>
+  <li class="espace4"><a class="lienpage" href="contenu/definir_defaut.html">Définir</a> l'application par défaut par l'utilisateur</li>
+	<li class="espace4"><a class="lienpage" href="contenu/recherche_fichiers.html">Rechercher</a> un dossier ou un fichier</li>
+	<li class="espace4"><a class="lienpage" href="contenu/renommer_fichiers.html">Renommer</a> un dossier ou un fichier</li>
+	<li class="espace4">Copier un dossier ou un fichier</li>
+	  <ul>
+	    <li><a class="lienpage" href="contenu/copier_fichiers_sans.html">Copier sans</a> les raccourcis clavier</li>
+	    <li><a class="lienpage" href="contenu/copier_fichiers_avec.html">Copier avec</a> les raccourcis clavier</li>
+	  </ul>
+        <li class="espace4">Couper un dossier ou un fichier</li>
+          <ul>
+	    <li><a class="lienpage" href="contenu/couper_fichiers_sans.html">Couper sans</a> les raccourcis clavier</li>
+	    <li><a class="lienpage" href="contenu/couper_fichiers_avec.html">Couper avec</a> les raccourcis clavier</li>
+	  </ul>
+<li class="espace4"><a class="lienpage" href="contenu/suppression_dossiers.html">Suppression</a> d'un dossier ou d'un fichier</li>
+         </ul>
+
+    <li  class="espace3" id="parametres">Gestionnaire de <a class="lienpage" href="contenu/parametres.html">paramètres</a></li>
+	 <ul>
+<li class="espace4">Changer le <a class="lienpage" href="contenu/fond_ecran.html">fond d'écran</a> du bureau</li>
+<li class="espace4">Définir la <a class="lienpage" href="contenu/resolution_ecran.html">résolution</a> de l'écran (configurer les paramètres et la disposition des écrans)</li>
+<li class="espace4">Personnaliser le tableau de bord</li>
+	 </ul>
+
+    <li class="espace3" id="ajour">Mise à jour du système</li>
+      <ul>
+        <li class="espace4">Mise à jour du système avec le Gestionnaire de paquets
+							<a class="lienpage" href="contenu/mise_a_jour.html">Synaptic</a></li>
+      </ul>
+
+    <li class="espace3" id="ajout_appli">Ajout d'une application ou de paquets</li>
+      <ul>
+        <li class="espace4">Ajout d'une application ou de paquets avec le Gestionnaire de paquets 
+							<a class="lienpage" href="contenu/ajout_appli.html">Synaptic</a></li>
+      </ul>
+
+    <li class="espace3" id="reseau">Les périphériques réseaux (Internet) gérés par NetworkManager.</li>
+      <ul>
+        <li class="espace4">Vérifier le réseau : <a class="lienpage" href="contenu/reseau_active.html">activé ou désactivé</a></li>
+	  <ul>
+ <li class="espace4"><a class="lienpage" href="contenu/reseau_connexion.html">Connexion</a> au réseau</li>
+ <li class="espace4"><a class="lienpage" href="contenu/reseau_deconnexion.html">Déconnexion</a> du réseau</li>
+ <li class="espace4"><a class="lienpage" href="contenu/reseau_information.html">Information</a> sur les connexions réseaux</li>
+ <li class="espace4"><a class="lienpage" href="contenu/reseau_modifier.html">Modifier</a> les connexions réseaux</li>
+ <li class="espace4"><a class="lienpage" href="contenu/reseau_ajsup.html">Ajouter ou supprimer</a> les connexions réseaux</li>
+	  </ul>
+      </ul>
+
+    <li class="espace3" id="cartewifi">Réseau wi-fi</li>
+      <ul>
+<li class="espace4"><a class="lienpage" href="contenu/reseau_wifi.html">Réseau wi-fi</a> avec une carte wi-fi intégrée au PC</li>
+	<ul>
+ <li class="espace4"><a class="lienpage" href="contenu/wificonnecter.html">Connecter</a> le PC à un réseau wi-fi</li>
+ <li class="espace4"><a class="lienpage" href="contenu/wifideconnecter.html">Déconnecter</a> le PC du réseau wi-fi</li>
+<li class="espace4"><a class="lienpage" href="contenu/wifidesactiver.html">Désactiver</a> le réseau wi-fi du PC</li>
+	</ul>
+        <li class="espace4">Utiliser une Clé USB wi-fi pour connecter le PC à un réseau wi-fi</li>
+          <ul>
+ <li class="espace4">Se connecter à un réseau wi-fi <a class="lienpage" href="contenu/cleusb_wificonnecter.html">via une clé USB wi-fi</a></li>
+ <li class="espace4">Se déconnecter du réseau wi-fi <a class="lienpage" href="contenu/cleusb_wifideconnecter.html">via une clé USB wi-fi</a></li>
+ <li class="espace4">Retirer la clé <a class="lienpage" href="contenu/cleusb_wifiretirer.html">USB wi-fi</a></li>
+          </ul>
+	<li class="espace4">Utiliser le <a class="lienpage" href="contenu/smartphone_wifi.html">smartphone</a> pour connecter le PC à un réseau wi-fi</li>
+      </ul>
+
+    <li class="espace3" id="connecter">Connecter ou déconnecter (retirer) un support externe</li>
+      <ul>
+	<li class="espace4">Clé USB ou un disque dur externe</li>	
+	  <ul>
+ <li class="espace4"><a class="lienpage" href="contenu/cleusb_connect.html">Connecter une clé USB</a> ou un disque dur externe</li>
+ <li class="espace4"><a class="lienpage" href="contenu/cleusb_retire.html">Retirer une clé USB</a> ou un disque dur externe en toute sécurité</li>	    
+	  </ul>
+	<li class="espace4">Smartphone</li>
+	  <ul> 
+ <li class="espace4"><a class="lienpage" href="contenu/smartphone_connect.html">Connecter le smartphone</a> pour récupérer les photos</li>
+ <li class="espace4"><a class="lienpage" href="contenu/smartphone_retire.html">Débrancher le smartphone</a> en toute sécurité</li>
+ <li class="espace4"><a class="lienpage" href="contenu/smartphone_internet.html">Utiliser le smartphone</a> pour connecter le PC à internet via les données mobiles</li>
+ <li class="espace4">Utiliser le smartphone pour connecter le PC à un réseau (internet) <a class="lienpage" href="contenu/smartphone_wifi.html">via le wi-fi</a></li>
+	</ul>
+ <li class="espace4">Debian et les appareils mobiles : 
+	<a href="https://wiki.debian.org/Mobile" target="_blank" title="https://wiki.debian.org/Mobile">Debian Mobile</a> ou
+	<a href="https://wiki.debian.org/Mobian" target="_blank" title="https://wiki.debian.org/Mobian">Mobian</a></li> 
+	</ul>
+
+    <li class="espace3" id="imprimante">Imprimante</li>
+      <ul>
+        <li class="espace4"><a class="lienpage" href="contenu/imprimante.html">Imprimante</a></li>
+	  <ul>
+ <li class="espace4"><a class="lienpage" href="contenu/detection_auto_imprimante.html">Détection</a> automatique de l'imprimante</li>
+ <li class="espace4"><a class="lienpage" href="contenu/interface_graphique_imprimante.html">L'interface graphique</a> de configuration</li>
+ <li class="espace4"><a class="lienpage" href="contenu/parametre_serveur.html">Paramètres</a> du serveur (l'imprimante)</li>
+ <li class="espace4"><a class="lienpage" href="contenu/ajout_manuellement_imprimante.html">Ajouter</a> manuellement une imprimante</li>
+ <li class="espace4"><a class="lienpage" href="contenu/supprimer_imprimante.html">Supprimer</a> l'imprimante</li>
+ <li class="espace4"><a class="lienpage" href="contenu/problemes_impression.html">Problèmes</a> d'impression</li>
+	  </ul>
+        <li class="espace4">Paramètres d'impressions, couleurs ou noir et blanc, qualité de l'impression, etc...</li>
+          <ul> 
+ <li class="espace4">Paramètres d'impressions avec la <a class="lienpage" href="contenu/imprimer_dialogue.html">boîte de dialogue</a></li>
+ <li class="espace4">Paramètres d'impressions si <a class="lienpage" href="contenu/imprimer_application.html">l'application LibreOffice</a> est utilisée.</li>
+          </ul>
+        <li class="espace4"><a class="lienpage" href="contenu/imprimer_etat.html">L'état d'impression</a> du document</li>
+      </ul>
+
+    <li class="espace3" id="scanner">Scanner</li>
+      <ul>
+<li class="espace4">Scanner avec l'application <a class="lienpage" href="contenu/scanner.html">
+									Numériseur de documents</a> (Simple-scan)</li>
+	<ul>
+ <li class="espace4"><a class="lienpage" href="contenu/scanner_enregistrernum.html">Enregistrer</a> le ou les document(s) numérisé(s)</li>
+ <li class="espace4"><a class="lienpage" href="contenu/scanner_imprimernum.html">Imprimer</a> et d'autres options</li>
+ <li class="espace4"><a class="lienpage" href="contenu/scanner_modifiernum.html">Modifier les préférences</a> de numérisation</li> 
+	</ul>
+      </ul>
+
+    <li class="espace3" id="applications">Les Applications</li>
+      <ul>
+        <li class="espace4">Capture d'<a class="lienpage" href="contenu/capturecran.html">écran</a></li>
+
+	<li class="espace4">Le pare-feu avec l'interface utilisateur graphique
+                                                                <a class="lienpage" href="contenu/parefeu.html">gufw</a></li>
+
+        <li class="espace4">Naviguer sur internet avec <a class="lienpage" href="contenu/firefox_internet.html">Firefox</a></li>
+	<ul>
+ <li class="espace4"><a class="lienpage" href="contenu/firefox_parametrer.html">Paramétrer</a> Firefox (changer le moteur de recherche)</li>
+ <li class="espace4">Suivre le <a class="lienpage" href="contenu/firefox_telechargement.html">téléchargement</a> d'un fichier dans Firefox</li>
+	</ul>
+
+	<li class="espace4">Ouvrir un document PDF</li>
+	<ul>
+ <li class="espace4">Visionneur de documents <a class="lienpage" href="contenu/pdf_atril.html">Atril</a></li>
+ <li class="espace4">Visionner un document <a class="lienpage" href="contenu/pdf_firefox.html">PDF avec Firefox</a> (permet en plus de remplir un PDF+XFA)</li>
+	</ul>
+
+        <li class="espace4"><a class="lienpage" href="contenu/libreoffice.html">LibreOffice</a>, une suite bureautique complète</li>
+
+       <li class="espace4">Ecouter de la musique avec le lecteur multimédia <a class="lienpage" href="contenu/musique.html">Parole</a></li>
+      </ul>
+
+    <li class="espace3" id="contact"><a class="lienpage" href="contenu/contact.html">Contacter</a> le site</li>
+
+  </ol>
+
+<!-- fin utilisation -->
+
+<!-- Bandeau fin de page --> 
+<div class="container">
+   <div class="box3">
+      <img class="box3" title="" src="images/logos/tux.png" alt="Tux" />
+   </div>
+   <div class="box4">
+      <a href="index.html"><img class="box4" title="Accueil" src="images/logos/tux.png" alt="Tux" /></a>
+      <div class="accueil">Retour</div>
+   </div>
+   <div class="box5">
+      <img class="box5" title="" src="images/logos/tux.png" alt="Tux" />
+   </div> 
+</div>
+
+  <p>Informations sur le <a class="lienpage" href="contenu/infolibre.html" alt="">logiciel libre</a> et 
+								<a class="lienpage" href="contenu/merci.html">Merci</a>.</p>
+
+<!-- Marques dépossées -->
+<p  class="charte"><a href="https://www.debian.org/trademark" target="_blank" title="https://www.debian.org/trademark">Marques déposées</a> : 
+   Ce site ne fait pas partie de <strong>Debian</strong>, n'est pas produit par le projet 
+                                        <strong>Debian</strong>, ni approuvé par le projet <strong>Debian</strong>.<br />
+   Ce site n'est pas affilié à <strong>Debian</strong>. <strong>Debian</strong> est une marque déposée appartenant 
+                                                                                à Software in the Public Interest, Inc.</p>
+<p class="charte"><a href="https://www.xfce.org/getinvolved" target="_blank" title="https://www.xfce.org/getinvolved">Contribuer</a> : 
+   Ce site ne fait pas partie de <strong>XFCE</strong>, n'est pas produit par le projet 
+                                                <strong>XFCE</strong>, ni approuvé par le projet <strong>XFCE</strong>.<br />
+   Ce site n'est pas affilié à <strong>XFCE</strong>.</p>
+
+<p class="charte">Ce site est réalisé par un passionné.</p>
+
+</body>
+</html>
+
+
+
