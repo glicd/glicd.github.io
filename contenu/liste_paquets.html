@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <meta charset="utf-8">
+       <title>Debian et Xfce liste des paquets à ajouter</title>
+       <link href="../styles/style.css" rel="stylesheet" type="text/css">
+       <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <h1>GLICD</h1>
+  <h2></h2>
+<!-- debut logo -->
+  <div class="containerlogos">
+   <div class="logodebian">
+    <a href="https://www.debian.org/logos/" target="_blank">
+    <img class="logodebian" src="../images/logos/openlogo.svg" title="https://www.debian.org/logos/"></a>
+   </div>
+  <div class="logosymbole">
+   <div class="logosymbole">&</div>
+  </div>
+   <div class="logoxfce">
+    <a href="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg" target="_blank">
+    <img class="logoxfce" src="../images/logos/XFCE4Logo.svg" title="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg"></a>
+   </div>
+  </div>
+<!-- fin logo -->
+ 
+  <p><span class="bold-titre">Liste des paquets à ajouter :</span> <a href="https://www.debian.org" target="_blank" title="https://www.debian.org">Debian</a></p>
+  <p>En plus des paquets qui ont été ajoutés lors de l'installation, installer la liste des paquets ci-dessous.<br />
+     Cette liste n'est pas exhaustive et ce n'est pas le but. Elle permet d'avoir des outils supplémentaires.</p>
+   
+  <p>Chaque paquet doit être installé un par un.<br />
+     Pour ajouter un paquet ou une application suivre le chapitre : 
+		<a class="lienpage" href="../index.html#ajout_appli"> Ajout d'une application ou de paquets</a></p>  
+
+  <ul>
+     <li><span class="bold-titre1">Multimédia :</span></li> 
+        <ul>
+	   <li> <strong>parole </strong> (installé par défaut) : Lecteur de média pour l’environnement de bureau Xfce, ajouter :</li>
+	       <ul>	   
+                  <li><strong>gvfs</strong></li>
+	          <li><strong>gvfs-backends</strong></li>
+	          <li><strong>libdvdnav4</strong></li>
+               </ul>
+           <li><strong>QuodLibet</strong> (installé par défaut) : lecteur de musique et gestionnaire de bibliothèque musicale</li>
+           <li><strong>clementine</strong> : lecteur musical multiplateforme, permet aussi d'utiliser le lecteur CD</li>
+           <li><strong>pulseaudio</strong> (installé par défaut) : Contôle de volume </li>
+	   <li><strong>xfburn</strong> (installé par défaut) : graveur de cd et dvd</li>
+           <li><strong>Videos</strong> > Installer le paquet « totem » : application de lecture vidéo (aussi lecture de DVD)</li>
+           <li><strong>vlc</strong> : lecteur multimédia, à utiliser aussi pour la lecture de cd et de dvd, puis ajouter :</li>
+	       <ul><li><strong>dvgrab</strong></li></ul>
+           <li><strong>xcfa</strong> : outil pour extraire le contenu de CD audio et convertir les fichiers audio, puis ajouter :</li>
+	      <ul>
+		 <li><strong>cdparanoia</strong></li>
+		 <li><strong>cd-discid</strong></li>
+		 <li><strong>xcfa-dbg</strong></li>       
+	      </ul>
+	</ul>
+  </ul>
+  <ul>
+     <li><span class="bold-titre1">Bureautique :</span></li>
+	<ul>
+	   <li><strong>atril</strong> (installé par défaut) : lecteur simple de documents multipages</li>
+	   <li>le pack <strong>libreoffice</strong> doit être déjà installé</li>
+	   <li><strong>pdfarranger</strong> : application pour modifier les fichiers pdf</li>
+	   <li><strong>printer-driver-cups-pdf</strong> : outil pour imprimer en pdf. La première impression en pdf va créer<br />
+	       un fichier pdf dans le Gestionnaire de fichiers</li>
+	</ul>
+  </ul>	  
+  <ul> 
+     <li><span class="bold-titre1">Accessoires :</span></li>	   
+	<ul>	
+	   <li><strong>xfce4-screenshooter</strong> (Capture d'écran) : utilitaire pour réaliser des captures d'écran</li>
+	</ul>
+  </ul>
+  <ul>
+     <li><span class="bold-titre1">Graphisme :</span></li>
+	<ul>        
+	   <li><strong>gimp</strong> : éditeur d'images perfectionné</li>
+	   <li><strong>karbon</strong> : application de dessin</li> 
+	   <li><strong>evince</strong> (Visionneur de documents) : visualisateur simple de documents, exemple des pdf</li>
+	   <li><strong>ristretto</strong> (installé par défaut) : visualisateur d’images, exemple des photos</li>
+           <li><strong>eog</strong> (Visionneur d'images) : programme de visualisation d'images, possibilité d'imprimer l'image</li>
+	</ul>
+  </ul>
+  <ul>
+     <li><span class="bold-titre1">Connecter une source externe :</span></li>
+	<ul>
+	   <li><strong>shotwell</strong> : permet d'importer des photos, images et vidéos depuis un disque dur ou 
+									un appareil photo ou un smartphone, etc.</li>
+	   <li><strong>XSane</strong> (installé par défaut) : application pour scanner</li>
+	   <li><strong>simple-scan</strong> : application pour scanner</li>
+           <li><strong>cups</strong> (installé par défaut) : le système commun d'impression </li>
+	   <li><strong>jmtpfs</strong> : Permet le transfert de fichiers en utilisant le protocole MTP (Media Transfer Protocol)</li>
+		<ul><li><strong>gvfs</strong> (installé par défaut)</li>
+		    <li><strong>gvfs-backends</strong></li>
+		    <li><strong>gvfs-common</strong> (installé par défaut)</li>
+		    <li><strong>gvfs-daemons</strong> (installé par défaut)</li>
+		    <li><strong>gvfs-fuse</strong></li>
+		    <li><strong>gvfs-libs</strong> (installé par défaut)</li>
+		</ul>
+	</ul>
+  </ul> 
+  <ul>
+     <li><span class="bold-titre1">Pare feu :</span></li>
+	<ul>
+	   <li><strong>ufw</strong> : programme pour la gestion du pare-feu netfilter, utilise iptables ou nftables.
+		<a href="https://wiki.archlinux.org/title/Uncomplicated_Firewall" target="_blank" title="https://wiki.archlinux.org/title/Uncomplicated_Firewall">Archlinux.org</a></li>
+	      <ul><li><strong>gufw</strong> : l'interface graphique de ufw</li></ul> 
+           <li>Ou <strong>firewalld</strong> : fournit un pare-feu, utilise nftables par défaut.
+				<a href="https://wiki.archlinux.org/title/Firewalld" target="_blank" title="https://wiki.archlinux.org/title/Firewalld">Archlinux.org</a></li>
+              <ul><li><strong>firewall-config</strong> : l'interface graphique</li></ul>
+	</ul>
+  </ul>
+  <ul>
+     <li><span class="bold-titre1">Internet : </span></li>	 
+ 	<ul>
+	   <li><strong>firefox-esr</strong> (installé par défaut) : navigateur web puissant</li>
+	   <li><strong>thunderbird</strong> : application de messagerie (Email), puis ajouter :</li>	
+	     <ul><li><strong>thunderbird-l10n-fr</strong> : paquet de langue française</li></ul>
+	</ul>
+  </ul>
+  <ul>
+     <li><span class="bold-titre1">Système : </span></li>
+	<ul>
+	   <li><strong>gparted</strong> : gestionnaire graphique pour partitionner les périphériques, exemple : disque dur ou clé usb</li>
+	   <li><strong>hardinfo</strong> :  application qui affiche des informations sur le matériel et le système d'exploitation</li>
+	</ul>
+     </ul>
+  <ul>
+     <li><span class="bold-titre1">Wifi et Bluetooth :</span></li>
+	<ul>
+	   <li><strong>wireless-regdb</strong> (installé par défaut) : pour carte réseau sans fil,
+		<a href="https://wireless.wiki.kernel.org/en/users/drivers" target="_blank" title="https://wireless.wiki.kernel.org/en/users/drivers">wireless.wiki</a></li>
+	   <li><strong>firmware-iwlwifi</strong> : dépend de la marque de la carte sans fil intégrée
+               <a href="https://wiki.debian.org/fr/iwlwifi" target="_blank" title="https://wiki.debian.org/fr/iwlwifi">wiki.debian</a>, puis ajouter :<br />
+              <ul><li><strong>initramfs-tools</strong> (installé par défaut)</li></ul>
+	   <li><strong>firmware-realtek</strong> : firmware pour adaptateur wi-fi et bluetooth (exemple : clé wi-fi)
+              <a href="https://packages.debian.org/bullseye/firmware-realtek" target="_blank" title="https://packages.debian.org/bullseye/firmware-realtek">Paquet/debian</a></li>
+	   <li><strong>bluez</strong> :  permet d'utiliser les périphériques Bluetooth, puis ajouter :</li>
+	      <ul>
+		 <li><strong>bluetooth</strong></li>
+		 <li><strong>blueman</strong> : interface graphique de gestion du bluetooth</li>
+	      </ul> 
+	</ul>
+  </ul>
+  <ul>
+     <li><span class="bold-titre1">Webcam intégré et Webcam usb :</span></li>
+	<ul>
+	   <li><strong>v4l-utils</strong> : fournit les utilitaires</li>
+	   <li><strong>webcamoid</strong> : application de capture de webcam</li>
+	</ul>
+  </ul>
+  <p>D'autres applications existent mais il faut bien faire des choix...</p>
+
+
+<!-- Bandeau fin de page -->
+<div class="container">
+  <div class="box3">
+    <img class="box3" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+   <div class="box4">
+    <a href="../index.html#chapitre_installation">
+						<img class="box4" title="Accueil" src="../images/logos/tux.png" alt="Tux" /></a>
+    <div class="accueil">Retour</div>
+  </div>
+   <div class="box5">
+     <img class="box5" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+</div>
+
+  <p>Informations sur le <a class="lienpage" href="infolibre.html" alt="">logiciel libre</a> et 
+                                                                <a class="lienpage" href="merci.html">Merci</a>.</p>
+
+<!-- Marques dépossées -->
+<p class="charte"><a href="https://www.debian.org/trademark" target="_blank" title="https://www.debian.org/trademark">Marques déposées</a> : 
+   Ce site ne fait pas partie de <strong>Debian</strong>, n'est pas produit par le projet 
+                                        <strong>Debian</strong>, ni approuvé par le projet <strong>Debian</strong>.<br />
+   Ce site n'est pas affilié à <strong>Debian</strong>. <strong>Debian</strong> est une marque déposée appartenant 
+                                                                                à Software in the Public Interest, Inc.</p>
+<p class="charte"><a href="https://www.xfce.org/getinvolved" target="_blank" title="https://www.xfce.org/getinvolved">Contribuer</a> : 
+   Ce site ne fait pas partie de <strong>XFCE</strong>, n'est pas produit par le projet 
+                                                <strong>XFCE</strong>, ni approuvé par le projet <strong>XFCE</strong>.<br />
+   Ce site n'est pas affilié à <strong>XFCE</strong>.</p>
+
+<p class="charte">Ce site est juste réalisé par un passionné.</p>
+
+</body>
+</html>
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Debian et Xfce imprimante, l'état d'impression du document</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <h1>GLICD</h1>
+  <h2></h2>
+<!-- debut logo -->
+  <div class="containerlogos">
+   <div class="logodebian">
+    <a href="https://www.debian.org/logos/" target="_blank">
+    <img class="logodebian" src="../images/logos/openlogo.svg" title="https://www.debian.org/logos/"></a>
+   </div>
+  <div class="logosymbole">
+   <div class="logosymbole">&</div>
+  </div>
+   <div class="logoxfce">
+    <a href="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg" target="_blank">
+    <img class="logoxfce" src="../images/logos/XFCE4Logo.svg" title="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg"></a>
+   </div>
+  </div>
+<!-- fin logo -->
+
+  <p id="automatique"><span class="bold-titre">L'état d'impression du document : </span>
+			  <a href="https://www.debian.org" target="_blank" title="https://www.debian.org">Debian</a> et 
+  					<a href="https://xfce.org" target="_blank" title="https://xfce.org">Xfce</a>.</p>
+
+  <p>Après avoir lancé une impression depuis une application, il est possible de connaître l'état de l'impression.</p>
+
+  <ul>
+    <li class="espace2">En haut à droite du bureau apparaît l'icône imprimante :</li>
+    <p><img class="box9" src="../images/etat_impression/etat13.png" alt="..." /></p>
+    <li class="espace2">Positionner le pointeur de la souris sur cette icône puis simple clic<br />
+			Une fenêtre s'ouvre : « Etat d'impression du document (mes tâches) »<br />
+		<ul>
+			<li class="espace4">Tâche : Numéro de la tâche d'impression, ici : « 11 »</li>
+			<li class="espace4">Documents : Le nom du document, ici : « Sans nom 1 »</li>
+			<li class="espace4">Imprimante : Le nom de l'imprimante, ici : « MEMO »</li>
+			<li class="espace4">Taille : La taille du fichier, ici : « 0k »</li>
+	<li class="espace4">Temps en file d'attente : Depuis combien de temps l'impression est en attente<br />
+			    Exemple : « il y a 5 minutes »</li>
+			<li class="espace4">Etat : L'état de l'impression, exemple : « En attente » ou « Traitement en cours »...</li>
+		</ul></li>
+    <p><img class="box14" src="../images/etat_impression/etat15.png" alt="..." /></p>
+    <li class="espace2">Lorsque l'impression est finie, la fenêtre doit être vide</li>
+    <p><img class="box14" src="../images/etat_impression/etat14.png" alt="..." /></p>
+    <li class="espace2">Si l'impression ne s'est pas faite, elle reste alors « En traitement en cours » ou « En attente ».</li>
+  </ul>
+  <p class="espace3">il est possible à l'aide des icônes de :</p>
+  <ul>
+    <li class="espace2">Rafraîchir la liste des tâches d'impression</li>
+    <p><img class="box14" src="../images/etat_impression/etat04.png" alt="..." /></p>
+    <li class="espace2">Afficher les tâches d'impression terminées</li>
+    <p><img class="box14" src="../images/etat_impression/etat05.png" alt="..." /></p>
+    <li class="espace2">Annuler les tâches d'impression sélectionées</li>
+    <p><img class="box14" src="../images/etat_impression/etat06.png" alt="..." /></p>
+	<ul>
+	  <li class="espace4">Pour annuler une tâche, il faut la sélectionner :<br />
+		Simple clic sur la tâche à annuler, elle est maintenant surlignée en bleu<br />
+		Dans cet exemple le document : « Sans nom 1 »</li>
+	  <p><img class="box7" src="../images/etat_impression/etat01.png" alt="..." /></p>
+          <li class="espace4">Simple clic > Annuler les tâches d'impression sélectionées</li>
+          <p><img class="box7" src="../images/etat_impression/etat02.png" alt="..." /></p>
+          <li class="espace4">Une fenêtre apparaît « Voulez-vous vraiment annuler cette tâche »<br />
+		Simple clic > « Annuler la tâche »</li>
+          <p><img class="box12" src="../images/etat_impression/etat03.png" alt="..." ></p>
+          <li class="espace4">La tâche a été annulée</li>
+        </ul>
+    <li class="espace2">De la même façon que d'annuler une tâche d'impression, il est possible de la supprimer.<br />
+		Sélectionner la tâche<br />
+		Simple clic > « Supprimer les tâches d'impression sélectionnées »</li>
+    <p><img class="box14" src="../images/etat_impression/etat07.png" alt="..." /></p>
+    <li class="espace2">Suspendre les tâches d'impression sélectionnées</li>
+    <p><img class="box14" src="../images/etat_impression/etat08.png" alt="..." /></p>
+    <li class="espace2">Reprendre les tâches d'impression sélectionnées</li>
+    <p><img class="box14" src="../images/etat_impression/etat09.png" alt="..." /></p>
+    <li class="espace2">Imprimer à nouveau les tâches d'impression sélectionnées</li>
+    <p><img class="box14" src="../images/etat_impression/etat10.png" alt="..." /></p>
+    <li class="espace2">Relancer les tâches d'impression sélectionnées</li>
+    <p><img class="box14" src="../images/etat_impression/etat11.png" alt="..." /></p>
+    <li class="espace2">Fermer cette fenêtre simple clic > Fermer</li>
+    <p><img class="box14" src="../images/etat_impression/etat12.png" alt="..." /></p>
+  </ul>
+
+
+<!-- bandeau fin de page -->
+<div class="container">
+  <div class="box3">
+    <img class="box3" title="" src="../images/logos/tux.png" alt="Tux" />
+  </div>
+  <div class="box4">
+    <a href="../index.html#imprimante">
+                                       <img class="box4" title="Accueil" src="../images/logos/tux.png" alt="Tux" /></a>
+    <div class="accueil">Retour</div>
+  </div>
+  <div class="box5">
+     <img class="box5" title="" src="../images/logos/tux.png" alt="Tux" />
+  </div>
+</div>
+ <p>Informations sur le <a class="lienpage" href="infolibre.html" alt="">logiciel libre</a> et 
+                                                                <a class="lienpage" href="merci.html">Merci</a>.</p>
+
+<!-- Marques dépossées -->
+<p class="charte"><a href="https://www.debian.org/trademark" target="_blank" title="https://www.debian.org/trademark">Marques déposées</a> : 
+   Ce site ne fait pas partie de <strong>Debian</strong>, n'est pas produit par le projet 
+                                        <strong>Debian</strong>, ni approuvé par le projet <strong>Debian</strong>.<br />
+   Ce site n'est pas affilié à <strong>Debian</strong>. <strong>Debian</strong> est une marque déposée appartenant 
+                                                                                à Software in the Public Interest, Inc.</p>
+<p class="charte"><a href="https://www.xfce.org/getinvolved" target="_blank" title="https://www.xfce.org/getinvolved">Contribuer</a> : 
+   Ce site ne fait pas partie de <strong>XFCE</strong>, n'est pas produit par le projet 
+                                                <strong>XFCE</strong>, ni approuvé par le projet <strong>XFCE</strong>.<br />
+   Ce site n'est pas affilié à <strong>XFCE</strong>.</p>
+
+<p class="charte">Ce site est juste réalisé par un passionné.</p>
+
+</body>
+</html>
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>  
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Debian et Xfce imprimante, paramètres d'impressions avec la boite de dialogue</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <h1>GLICD</h1>
+  <h2></h2>
+<!-- debut logo -->
+  <div class="containerlogos">
+   <div class="logodebian">
+    <a href="https://www.debian.org/logos/" target="_blank">
+    <img class="logodebian" src="../images/logos/openlogo.svg" title="https://www.debian.org/logos/"></a>
+   </div>
+  <div class="logosymbole">
+   <div class="logosymbole">&</div>
+  </div>
+   <div class="logoxfce">
+    <a href="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg" target="_blank">
+    <img class="logoxfce" src="../images/logos/XFCE4Logo.svg" title="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg"></a>
+   </div>
+  </div>
+<!-- debut logo -->
+
+  <p id="imprimante"><span class="bold-titre">Paramètres d'impressions avec la boîte de dialogue : </span>
+                         <a href="https://www.debian.org" target="_blank" title="https://www.debian.org">Debian</a> et
+                                          <a href="https://xfce.org" target="_blank" title="https://xfce.org">Xfce</a></p>
+
+  <p class="espace4">Lors d'une demande d'impression, il apparaît différentes fenêtres pour paramétrer l'impression,
+										cela dépend de l'application utilisée.<br />
+  Le but est de comprendre le cheminement pour paramétrer l'impression.</p>
+  
+  <p class="espace2">Seule 2 fenêtres de paramétrages seront vues ici, mais ça reste toujours dans le même esprit : </p>
+   <ul>
+	<li>Avec la boîte de dialogue, comme expliqué succinctement dans ce chapitre</li>
+	<li>Ou sous une autre forme, se rendre au chapitre imprimante : Paramètres d'impressions avec 
+						<a class="lienpage" href="../index.html#imprimante">LibreOffice</a></li>
+  </ul>
+
+  <p class="espace3">La boîte de dialogue : Tout ne sera pas décrit dans ce MEMO.</p>
+ 
+  <ul>
+    <li class="espace2">Après avoir choisi l'option « Imprimer » depuis une application<br />
+			Une fenêtre s'ouvre sur l'onglet « Général » puisqu'il est souligné en bleu.</li>
+    <p><img class="box14" src="../images/scanner/scanner44.png" alt="..." /></p>
+    <li class="espace2">Si l'imprimante a été configurée par défaut, elle doit être encadrée en bleu.<br />
+	Si non, à l'aide d'un simple clic, sélectionner l'imprimante.<br />
+	Si besoin se rendre au chapitre Imprimante : 
+		<a class="lienpage" href="../index.html#imprimante">L'interface graphique</a> de configuration</li>
+    <li class="espace2">Dans cet exemple, l'imprimante sélectionnée est « MEMO » encadrée en bleu.</li>
+    <p><img class="box14" src="../images/scanner/scanner44.png" alt="..." /></p>
+    <li class="espace2">Sous <strong>Plage</strong></li>
+      <ol type="a">
+	<li class="espace4">Rond bleu « Toutes les pages » cela veut dire que toutes les pages seront imprimées</li>
+	<li class="espace4">Simple clic sur le rond « Page actuelle » seule la page visible sera imprimée</li>
+	<li class="espace4">Imprimer seulement quelques pages du document<br />
+			Simple clic sur le rond « Pages » puis dans le rectangle nommé « d » saisir, à l'aide du clavier,
+			la page ou les pages à imprimer. Exemple, imprimer les 4 premières pages : 1-4</li>
+      </ol>
+    <p><img class="box14" src="../images/imprimer_dialogue/impdial10.png" alt="..." /></p>
+    <li class="espace2">Sous <strong>Copies</strong><br />
+	Simple clic > « + » augmente le nombre de copies à imprimer<br />
+	Simple clic > « - » diminue le nombre de copies à imprimer<br />
+	Si besoin, pour une copie inversée cocher « Inverser »</li>
+    <p><img class="box14" src="../images/imprimer_dialogue/impdial11.png" alt="..." /></p>
+    <li class="espace2">Simple clic sur l'onglet > Mise en page<br />
+	Il est maintenant souligné en bleu<br />
+	Sous <strong>Agencement</strong> > Echelle à 100%, réduire l'échelle à 90% si le document à imprimer ne présente 
+									aucune marge. A ajuster selon le besoin.<br />
+	Sous <strong>Papier</strong> > Taille du papier, simple clic >A4, une liste déroulante apparaît avec différents 
+								formats de papier. Sélectionner suivant le besoin.</li> 
+    <p><img class="box14" src="../images/imprimer_dialogue/impdial02.png" alt="..." /></p>
+    <li class="espace2">Simple clic sur l'onglet > Gestion des pages<br />
+        Il est maintenant souligné en bleu</li>
+    <p><img class="box14" src="../images/imprimer_dialogue/impdial03.png" alt="..." /></p>
+    <li class="espace2">Simple clic sur l'onglet > Tâche<br />
+        Il est maintenant souligné en bleu</li>
+    <p><img class="box14" src="../images/imprimer_dialogue/impdial04.png" alt="..." /></p>
+    <li class="espace2">Simple clic sur l'onglet > qualité de l'image<br />
+        Il est maintenant souligné en bleu</li>
+    <p><img class="box14" src="../images/imprimer_dialogue/impdial05.png" alt="..." /></p>
+     <ul>
+       <li class="espace2">Simple clic > « 300x300 DPI » une liste déroulante apparaît (par défaut 300x300 DPI est suffisant).<br />
+	Si besoin, changer la qualité de l'impression<br />
+	Information sur le <a href="https://fr.wikipedia.org/wiki/Point_par_pouce" target="_blank" title="https://fr.wikipedia.org/wiki/Point_par_pouce">DPI</a> (Point_par_pouce)<br />
+	<strong>Nota</strong> : Dans certaines applications, le choix se portera sur « Normal » ou « Best »...</li>
+       <p><img class="box7" src="../images/imprimer_dialogue/impdial06.png" alt="..." /></p>
+     </ul>
+    <li class="espace2">Simple clic sur l'onglet > Couleur<br />
+        Il est maintenant souligné en bleu<br />
+	Color Model : « RGB Color » pour une impression en couleur</li>
+    <p><img class="box14" src="../images/imprimer_dialogue/impdial07.png" alt="..." /></p>
+     <ul>
+       <li class="espace2">Simple clic > « RGB Color » une liste déroulante apparaît<br />
+        Simple clic > « Grayscale » pour une impression en noir et blanc</li>
+       <p><img class="box7" src="../images/imprimer_dialogue/impdial08.png" alt="..." /></p>
+    <li class="espace2">Simple clic sur l'onglet > Avancé<br />
+        Il est maintenant souligné en bleu<br />
+	Positionner le pointeur de la souris sur la barre latérale, puis maintenir appuyé et faire glisser la souris ;
+									d'autres réglages seront accessibles.</li>
+    <p><img class="box14" src="../images/imprimer_dialogue/impdial09.png" alt="..." /></p>
+    <li class="espace2">Si tout est bon, simple clic > Imprimer<br />
+	<strong>Nota</strong> : Avant d'imprimer, il est possible de faire un aperçu, simple clic > Aperçu.</li>
+     </ul>
+  </ul>
+
+  <p class="espace2">Si besoin, se rendre au chapitre Imprimante :
+        <a class="lienpage" href="../index.html#imprimante">L'état d'impression</a> du document.</p>
+
+
+<!-- bandeau fin de page -->
+<div class="container">
+  <div class="box3">
+    <img class="box3" title="" src="../images/logos/tux.png" alt="Tux" />
+  </div>
+  <div class="box4">
+    <a href="../index.html#imprimante">
+                                           <img class="box4" title="Accueil" src="../images/logos/tux.png" alt="Tux" /></a>
+    <div class="accueil">Retour</div>
+  </div>
+  <div class="box5">
+     <img class="box5" title="" src="../images/logos/tux.png" alt="Tux" />
+  </div>
+</div>
+ <p>Informations sur le <a class="lienpage" href="infolibre.html" alt="">logiciel libre</a> et 
+                                                                <a class="lienpage" href="merci.html">Merci</a>.</p>
+
+<!-- Marques dépossées -->
+<p class="charte"><a href="https://www.debian.org/trademark" target="_blank" title="https://www.debian.org/trademark">Marques déposées</a> : 
+   Ce site ne fait pas partie de <strong>Debian</strong>, n'est pas produit par le projet 
+                                        <strong>Debian</strong>, ni approuvé par le projet <strong>Debian</strong>.<br />
+   Ce site n'est pas affilié à <strong>Debian</strong>. <strong>Debian</strong> est une marque déposée appartenant 
+                                                                                à Software in the Public Interest, Inc.</p>
+<p class="charte"><a href="https://www.xfce.org/getinvolved" target="_blank" title="https://www.xfce.org/getinvolved">Contribuer</a> : 
+   Ce site ne fait pas partie de <strong>XFCE</strong>, n'est pas produit par le projet 
+                                                <strong>XFCE</strong>, ni approuvé par le projet <strong>XFCE</strong>.<br />
+   Ce site n'est pas affilié à <strong>XFCE</strong>.</p>
+
+<p class="charte">Ce site est juste réalisé par un passionné.</p>
+
+</body>
+</html>
+
+

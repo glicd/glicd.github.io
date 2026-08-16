@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <meta charset="utf-8">
+       <title>Debian et Xfce mise à jour</title>
+       <link href="../styles/style.css" rel="stylesheet" type="text/css">
+       <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <h1>GLICD</h1>
+  <h2></h2>
+<!-- debut logo -->
+  <div class="containerlogos">
+   <div class="logodebian">
+    <a href="https://www.debian.org/logos/" target="_blank">
+    <img class="logodebian" src="../images/logos/openlogo.svg" title="https://www.debian.org/logos/"></a>
+   </div>
+  <div class="logosymbole">
+   <div class="logosymbole">&</div>
+  </div>
+   <div class="logoxfce">
+    <a href="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg" target="_blank">
+    <img class="logoxfce" src="../images/logos/XFCE4Logo.svg" title="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg"></a>
+   </div>
+  </div>
+<!-- fin logo -->
+
+  <p id="Mise_à_jour"><span class="bold-titre">Mise à jour du système avec le Gestionnaire de paquets Synaptic : </span>
+	<a href="http://www.nongnu.org/synaptic" target="_blank" title="http://www.nongnu.org/synaptic"> Synaptic</a></p>
+  <p>Synaptic est une interface graphique du gestionnaire de paquets.<br />
+     Les applications sont organisées sous forme de paquets.<br />
+     Le gestionnaire de paquets permet d'installer, de mettre à jour ou de supprimer ces applications.</p>
+  <p>Dans ce mémo, c'est à l'utilisateur d'appliquer manuellement les mises à jour.</p> 
+  <p><strong>ATTENTION</strong> :</p>
+        <ul>
+           <li>Synaptic gère tous les programmes installés sur le système (PC).</li>
+           <li>Synaptic est à utiliser avec le plus grand soin.</li>
+           <li>Synaptic peut rendre le système inutilisable.</li>
+        </ul>
+  <p>Avant de commencer, le PC doit être connecté à internet.<br />
+     Voir le chapitre : <a class="lienpage" href="../index.html#reseau">Les périphériques réseaux (Internet)</a> gérés par NetworkManager.</p>
+
+ <ul>
+     <ol type="1">
+        <li>Se rendre dans le menu :<br />
+	    Simple clic > Applications > Système > Gestionnaire de paquets Synaptic<br />
+	    Simple clic > Gestionnaire de paquets Synaptic</li>
+	  <p><img class="box2" src="../images/xfce/xfce8.png" alt="..." /></p>
+	<li class="espace2">Une fenêtre apparaît :<br />
+	« Une authentification est requise pour exécuter le gestionnaire de paquet Synaptic »</li>
+	  <p><img class="box2" src="../images/synaptic/synaptic2.png" alt="..." /></p>
+	<li class="espace2">Saisir le mot de passe pour Root (superutilisateur)<br />
+	    Valider avec la touche « Entrée » du clavier<br />
+	    Ou simple clic > S'authentifier</li>
+	  <p><img class="box2" src="../images/synaptic/synaptic3.png" alt="..." /></p>
+        <li class="espace2">A la première ouverture du Gestionnaire de paquets Synaptic :<br />
+	    la fenêtre de présentation rapide apparaît.<br />
+            Lire puis simple clic > Fermer (il se peut que cette fenêtre n'apparaisse pas.)</li>
+          <p><img class="box7" src="../images/synaptic/synaptic4.png" alt="..." /></p>
+	   <p><strong>Nota</strong> : pour agrandir les images de ce MEMO, positionner le pointeur de la souris sur l'image<br />
+            Puis clic droit > Ouvrir l'image dans un nouvel onglet.<br />
+            Dans le navigateur un nouvel onglet a dû s'ouvrir, simple clic sur l'onglet pour visualiser l'image.</p>
+        <li class="espace2">L'application de Synaptic apparaît, composée de 6 zones :<br />
+            <ul>
+                <ol>
+                   <li class="espace4">Barre de menus : Fichier, Edition, Paquets, Configuration, Aide.</li>
+                   <li>Barre d'outils : Permet les actions principales. Recharger, Tout mettre à niveau...</li>
+                   <li>Sélecteur de catégorie : Affine la liste des paquets</li>
+                   <li>Liste des paquets : Répertorie les paquets connus. Peut être optimisé à l'aide de filtres.</li>
+                   <li>Champ de description : Affiche la description du paquet sélectionné.</li>
+                   <li>Barre d'état : Affiche des informations globales sur l'état de Synaptic.</li>
+                </ol>
+           </ul>
+        </li>
+          <p><img class="box8" src="../images/synaptic/synaptic4bis.png" alt="..." /></p>
+	<li class="espace2">Dans la barre d'outils : Simple clic > Recharger</li>
+	  <p><img class="box12" src="../images/synaptic/synaptic5.png" alt="..." /></p>
+	<li class="espace2">Le pointeur de la souris va devenir une roue qui tourne et une fenêtre peut apparaître.<br />
+	    Attendre la fin du téléchargement<br />
+	    La fenêtre va disparaître et le pointeur de la souris va réapparaître.</li>
+	  <p><img class="box2" src="../images/synaptic/synaptic6.png" alt="..." /></p>
+	<li class="espace2">Dans la barre d'outils : Simple clic > Tout mettre à niveau</li>
+	  <p><img class="box12" src="../images/synaptic/synaptic7.png" alt="..." /></p>
+	<li class="espace2">Une fenêtre apparaît avec la liste des paquets qui vont être mis à jour.<br />
+	    Simple clic > Ajouter à la selection, la fenêtre va disparaître.<br />
+	    <strong>Nota</strong> : La liste de mise à jour ne sera pas la même que ci-dessous.</li>
+	  <p><img class="box2" src="../images/synaptic/synaptic8.png" alt="..." /></p>
+	<li class="espace2">a) Dans la barre d'outils « Appliquer » doit être en noir et non grisé. Simple clic > Appliquer<br />	
+	  <p><img class="box12" src="../images/synaptic/synaptic12.png" alt="..." /></p>
+	    b) Si « Appliquer » est grisé, ne rien faire le système est à jour. 
+				<a class="lienpage" href="mise_a_jour.html#fermer">Fermer</a> l'application Synaptic.</li> 
+	  <p><img class="box12" src="../images/synaptic/synaptic10b.png" alt="..." /></p>	
+	<li class="espace2">Une fenêtre apparaît indiquant :<br />
+	    C'est votre dernière chance de parcourir la liste des changements prévus avant qu'ils ne soient appliqués 
+						(si souhaité, simple clic > Afficher les informations détaillées).<br />
+	    Simple clic > Appliquer</li>
+	  <p><img class="box12" src="../images/synaptic/synaptic9.png" alt="..." /></p>
+	<li class="espace2">Des fenêtres vont apparaître, indiquant :<br />
+	    Application des changements en cours, laisser faire.</li>
+	  <p><img class="box2" src="../images/synaptic/synaptic10.png" alt="..." /></p>
+	<li class="espace2">Un message informe que les modifications ont été appliquées.<br /> 
+	    Fermer la fenêtre : Simple clic > Fermer
+          <p><img class="box2" src="../images/synaptic/synaptic11.png" alt="..." /></p>
+	<li class="espace2">Vérifier, dans la barre d'outis, « Appliquer » doit être grisé.</li>
+	  <p><img class="box12" src="../images/synaptic/synaptic10b.png" alt="..." /></p>
+	<li class="espace2" id="fermer">Fermer l'application Synaptic en haut à gauche : Fichier > Quitter</li> 
+    	  <p><img class="box12" src="../images/synaptic/synaptic14.png" alt="..." /></p>  
+    </ol>
+  </ul>
+  <p class="espace2">Faire régulièrement les mises à jour de votre PC (par exemple : 1 fois par mois).<br />
+                     C'est très important pour maintenir la sécurité du système.</p>
+  <p>Dans Gestionnaire de paquets Synaptic, simple clic > Aide pour consulter la documentation.<br />
+     Visiter <a href="http://www.nongnu.org/synaptic" target="_blank" title="http://www.nongnu.org/synaptic"> la page d'accueil</a> de Synaptic.</p>
+
+<!-- bandeau fin de page -->
+<div class="container">
+  <div class="box3">
+    <img class="box3" title="" src="../images/logos/tux.png" alt="Tux" />
+  </div>
+  <div class="box4">
+    <a href="../index.html#ajour">
+				<img class="box4" title="Accueil" src="../images/logos/tux.png" alt="Tux" /></a>
+    <div class="accueil">Retour</div>
+  </div>
+  <div class="box5">
+     <img class="box5" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+</div>
+  <p>Informations sur le <a class="lienpage" href="infolibre.html" alt="">logiciel libre</a> et 
+                                                                <a class="lienpage" href="merci.html">Merci</a>.</p>
+
+<!-- Marques dépossées -->
+<p class="charte"><a href="https://www.debian.org/trademark" target="_blank" title="https://www.debian.org/trademark">Marques déposées</a> : 
+   Ce site ne fait pas partie de <strong>Debian</strong>, n'est pas produit par le projet 
+                                        <strong>Debian</strong>, ni approuvé par le projet <strong>Debian</strong>.<br />
+   Ce site n'est pas affilié à <strong>Debian</strong>. <strong>Debian</strong> est une marque déposée appartenant 
+                                                                                à Software in the Public Interest, Inc.</p>
+<p class="charte"><a href="https://www.xfce.org/getinvolved" target="_blank" title="https://www.xfce.org/getinvolved">Contribuer</a> : 
+   Ce site ne fait pas partie de <strong>XFCE</strong>, n'est pas produit par le projet 
+                                                <strong>XFCE</strong>, ni approuvé par le projet <strong>XFCE</strong>.<br />
+   Ce site n'est pas affilié à <strong>XFCE</strong>.</p>
+
+<p class="charte">Ce site est juste réalisé par un passionné.</p>
+
+</body>
+</html>
+

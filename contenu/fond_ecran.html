@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Debian et Xfce changer le fond d'écran du bureau</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <h1>GLICD</h1>
+  <h2></h2>
+<!-- debut logo -->
+  <div class="containerlogos">
+   <div class="logodebian">
+    <a href="https://www.debian.org/logos/" target="_blank">
+    <img class="logodebian" src="../images/logos/openlogo.svg" title="https://www.debian.org/logos/"></a>
+   </div>
+  <div class="logosymbole">
+   <div class="logosymbole">&</div>
+  </div>
+   <div class="logoxfce">
+    <a href="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg" target="_blank">
+    <img class="logoxfce" src="../images/logos/XFCE4Logo.svg" title="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg"></a>
+   </div>
+  </div>
+<!-- fin logo -->
+
+  <p><span class="bold-titre">Changer le fond d'écran du bureau : </span>
+   <a href="https://docs.xfce.org/xfce/xfdesktop/preferences" target="_blank" title="https://docs.xfce.org/xfce/xfdesktop/preferences">le lien</a> et 
+				<a href="https://xfce.org" target="_blank" title="https://xfce.org">le site Xfce.</a></p> 
+
+  <p>Le fond d'écran du bureau est défini par défaut avec une image de Debian.<br />
+     Si souhaité, il est possible de le changer.</p>
+   <ul>
+        <li class="espace2">Ouvrir le gestionnaire de paramètres<br />
+	Simple clic > Applications > Paramètres > Gestionnaire de paramètres</li>
+        <p><img class="box14" src="../images/parametres/parametre02.png" alt="..." /></p>
+        <li class="espace2">La fenêtre du gestionnaire de paramètres s'ouvre.</li>
+        <p><img class="box14" src="../images/parametres/parametre03.png" alt="..." /></p>
+        <li class="espace2">Simple clic > Bureau</li>
+        <p><img class="box14" src="../images/parametres/parametre13.png" alt="..." /></p>
+        <li class="espace2">La fenêtre « Bureau » s'ouvre sur l'onglet « Arrière-plan » (souligné en bleu).<br />
+		L'image sélectionnée pour le fond d'écran est celle encadrée en bleu.</li>
+        <p><img class="box14" src="../images/bureau/bureau01.png" alt="..." /></p>
+        <li class="espace2">La fenêtre bureau se compose de 3 onglets :</li>
+	  <ul>
+		<li class="espace4"><strong>Arrière-plan</strong> : Permet de configurer l'image en arrière plan du bureau avec différentes configurations.</li>
+                <li class="espace4"><strong>Menus</strong> : Permet de configurer le comportement des menus.</li>
+                <li class="espace4"><strong>Icônes</strong> : Permet de configurer les icônes du bureau.</li>
+	   </ul>
+        <p><img class="box14" src="../images/bureau/bureau01.png" alt="..." /></p>
+        <li class="espace2">Simple clic > Menus<br />
+		La page « Menus » s'affiche et « Menus » est maintenant souligné en bleu.</li>
+        <p><img class="box14" src="../images/bureau/bureau02.png" alt="..." /></p>
+        <li class="espace2">Revenir à la page « Arrière-plan »<br />
+		Simple clic > Arrière-plan</li>
+       <p><img class="box14" src="../images/bureau/bureau01.png" alt="..." /></p>
+       <li class="espace2">Simple clic > Desktop-base<br />
+		La notification du bouton est : Choisir le dossier contenant les fonds d'écran.</li>
+       <p><img class="box9" src="../images/bureau/bureau03.png" alt="..." /></p>
+       <li class="espace2">Une liste déroulante apparaît.</li>
+       <p><img class="box10" src="../images/bureau/bureau04.png" alt="..." /></p>
+       <li class="espace2">Simple clic > Autre</li>
+       <p><img class="box10" src="../images/bureau/bureau05.png" alt="..." /></p>
+       <li class="espace2">La fenêtre « Sélectionner un répertoire » s'ouvre.<br />
+	Par défaut les images du fond d'écran sont dans : usr > share > images > desktop-base</li>
+       <p><img class="box14" src="../images/bureau/bureau06.png" alt="..." /></p>
+       <li class="espace2">Dans cet exemple, le dossier par défaut « desktop-base » ne sera pas utilisé.<br />
+			 Un dossier dédié au fond d'écran sera créé.<br />
+			Fermer la fenêtre, simple clic > Annuler</li>
+       <p><img class="box10" src="../images/bureau/bureau07.png" alt="..." /></p>
+       <li id="sibesoin" class="espace2">Créer le dossier nommé « fond_écran » dans le dossier « Images »<br />
+	Si besoin, pour créer le dossier  <a class="lienpage" href="creer_dossier_image.html">se rendre ici.</a></li>
+       <li class="espace1">Après avoir créé le dossier « fond_écran » dans le dossier « Images », revenir à la la fenêtre bureau sous l'onglet « Arrière-plan » (souligné en bleu).</li>
+       <p><img class="box14" src="../images/bureau/bureau01.png" alt="..." /></p>
+       <li class="espace2">Simple clic > Desktop-base<br />
+                La notification du bouton est : Choisir le dossier contenant les fonds d'écran.</li>
+       <p><img class="box9" src="../images/bureau/bureau03.png" alt="..." /></p>
+       <li class="espace2">Une liste déroulante apparaît.</li>
+       <p><img class="box10" src="../images/bureau/bureau04.png" alt="..." /></p>
+       <li class="espace2">Simple clic > Autre</li>
+       <p><img class="box10" src="../images/bureau/bureau05.png" alt="..." /></p>
+       <li class="espace2">La fenêtre « Sélectionner un répertoire » s'ouvre.</li>
+       <p><img class="box14" src="../images/bureau/bureau06.png" alt="..." /></p>
+       <li class="espace2">Simple clic > Dossier personnel</li>       
+       <p><img class="box14" src="../images/bureau/bureau17.png" alt="..." /></p>
+       <li class="espace2">Double clic > Images</li>
+       <p><img class="box14" src="../images/bureau/bureau18.png" alt="..." /></p>
+       <li class="espace2">Double clic > fond_écran (le dossier qui a été créé dans Images)</li>
+       <p><img class="box14" src="../images/bureau/bureau19.png" alt="" /></p>
+       <li class="espace2">Ici, les images ou les photos qui ont été ajoutées (elles sont toutes grisées).<br />
+			Simple clic > Ouvrir</li>
+       <p><img class="box14" src="../images/bureau/bureau20.png" alt="..." /></p>
+       <li class="espace2">Simple clic sur l'image désirée en fond écran<br />
+		Dans cet exemple : xfce.png<br />
+		L'image sélectionnée est encadrée en bleu.</li>
+       <p><img class="box14" src="../images/bureau/bureau21.png" alt="..." /></p>
+       <li class="espace2">Après avoir sélectionné l'image avec un simple clic, le résultat est tout de suite visible en fond écran.</li>
+       <p><img class="box14" src="../images/bureau/bureau22.png" alt="..." /></p>
+       <li class="espace2">Pour avoir plus de visibilité sur le fond écran :<br />
+			Réduire la fenêtre « Bureau » avec un simple clic sur la petite flèche « ^ ».</li>
+       <p><img class="box14" src="../images/bureau/bureau23.png" alt="..." /></p>
+       <li class="espace2">La fenêtre « Bureau » est réduite<br />
+		Le fond écran est d'avantage visible.</li>
+       <p><img class="box14" src="../images/bureau/bureau24.png" alt="..." /></p>
+       <li class="espace2">Agrandir la fenêtre « Bureau » avec un simple clic sur la petite flèche.</li>
+       <p><img class="box14" src="../images/bureau/bureau25.png" alt="..." /></p>
+       <li class="espace2">Plusieurs options sont possibles :<br />
+	L'option <strong>Style</strong><br />
+        L'option <strong>Couleur</strong><br />
+        L'option <strong>Changer le fond d'écran</strong></li>
+       <p><img class="box14" src="../images/bureau/bureau26.png" alt="..." /></p>
+    </ul>
+
+
+<!-- bandeau fin de page -->
+<div class="container">
+  <div class="box3">
+    <img class="box3" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+   <div class="box4">
+    <a href="../index.html#parametres">
+					<img class="box4" title="Accueil" src="../images/logos/tux.png" alt="Tux" /></a>
+    <div class="accueil">Retour</div>
+  </div>
+   <div class="box5">
+     <img class="box5" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+</div>
+  <p>Informations sur le <a class="lienpage" href="infolibre.html" alt="">logiciel libre</a> et 
+                                                                <a class="lienpage" href="merci.html">Merci</a>.</p>
+
+<!-- Marques dépossées -->
+<p class="charte"><a href="https://www.debian.org/trademark" target="_blank" title="https://www.debian.org/trademark">Marques déposées</a> : 
+   Ce site ne fait pas partie de <strong>Debian</strong>, n'est pas produit par le projet 
+                                        <strong>Debian</strong>, ni approuvé par le projet <strong>Debian</strong>.<br />
+   Ce site n'est pas affilié à <strong>Debian</strong>. <strong>Debian</strong> est une marque déposée appartenant 
+                                                                                à Software in the Public Interest, Inc.</p>
+<p class="charte"><a href="https://www.xfce.org/getinvolved" target="_blank" title="https://www.xfce.org/getinvolved">Contribuer</a> : 
+   Ce site ne fait pas partie de <strong>XFCE</strong>, n'est pas produit par le projet 
+                                                <strong>XFCE</strong>, ni approuvé par le projet <strong>XFCE</strong>.<br />
+   Ce site n'est pas affilié à <strong>XFCE</strong>.</p>
+
+<p class="charte">Ce site est juste réalisé par un passionné.</p>
+
+</body>
+</html>
+
+

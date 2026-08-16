@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Debian et Xfce connecter le smartphone au PC pour récupérer les photos</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <h1>GLICD</h1>
+  <h2></h2>
+<!-- debut logo -->
+  <div class="containerlogos">
+   <div class="logodebian">
+    <a href="https://www.debian.org/logos/" target="_blank">
+    <img class="logodebian" src="../images/logos/openlogo.svg" title="https://www.debian.org/logos/"></a>
+   </div>
+  <div class="logosymbole">
+   <div class="logosymbole">&</div>
+  </div>
+   <div class="logoxfce">
+    <a href="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg" target="_blank">
+    <img class="logoxfce" src="../images/logos/XFCE4Logo.svg" title="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg"></a>
+   </div>
+  </div>
+<!-- fin logo -->
+
+  <p><span class="bold-titre">Connecter le smartphone au PC pour récupérer les photos : </span> 
+			<a href="https://www.debian.org" target="_blank" title="https://www.debian.org">Debian</a> et
+                                          <a href="https://xfce.org" target="_blank" title="https://xfce.org">Xfce</a></p>
+  <p>Dans cet exemple, <strong>Android</strong> est le système d'exploitation du 
+<a href="https://fr.wikipedia.org/wiki/Smartphone" target="_blank" title="https://fr.wikipedia.org/wiki/Smartphone">smartphone</a>.<br />
+     les photos seront récupérées à l'aide du gestionnaire de fichiers Thunar.<br />
+     Le protocole MTP (Media Transfer Protocol) sera utilisé pour le transfert de fichiers entre le smartphone et le PC.</p>
+  <p>Les paquets ci-dessous et leurs dépendances doivent être installés :</p>
+     <ul>
+	<li><strong>jmtpfs</strong> : Permet le transfert de fichiers en utilisant le protocole MTP (Media Transfer Protocol) <a href="https://packages.debian.org/fr/stable/utils/jmtpfs" target="_blank" title="https://packages.debian.org/fr/stable/utils/jmtpfs">Paquet/jmtpfs</a></li>
+	<li><strong>gvfs</strong> (installé par défaut) <a href="https://packages.debian.org/fr/stable/utils/gvfs" target="_blank" title="https://packages.debian.org/fr/stable/utils/gvfs">Paquet/gvfs</a></li>
+        <li><strong>gvfs-backends</strong></li>
+        <li><strong>gvfs-common</strong> (installé par défaut)</li>
+        <li><strong>gvfs-daemons</strong> (installé par défaut)</li>
+        <li><strong>gvfs-fuse</strong> <a href="https://packages.debian.org/fr/stable/utils/gvfs-fuse" target="_blank" title="https://packages.debian.org/fr/stable/utils/gvfs-fuse">Paquet/gvfs-fuse</a></li>
+        <li><strong>gvfs-libs</strong> (installé par défaut)</li>
+     </ul>
+  <p>Pour l'installation des paquets se reporter au chapitre : 
+			<a class="lienpage" href="../index.html#ajout_appli">Ajout d'une application ou de paquets</a><br />
+     Après l'installation des paquets il est <strong>important</strong> d'éteindre puis de redémarrer le PC.</p>
+  <ul>
+     <li class="espace2">Après avoir installé les paquets et redémarré le PC, rester sur le bureau</li>
+      <p><img class="box9" src="../images/xfce/xfcebis.png" alt="..." /></p>
+      <li class="espace2">Déverrouiller le smartphone à l'aide de votre mot de passe. Attention, si le smartphone est
+                                                                                verrouillé la connexion ne se fera pas.<br />
+			  Connecter le smartphone au PC à l'aide d'un câble USB, le smartphone apparaît sur le bureau.<br />
+        Dans cet exemple, le smartphone apparaît sur le bureau sous le nom : MEMOsmart</li>
+      <p><img class="box11" src="../images/smartphone/smart01.png" alt="..." /></p>
+     <li class="espace2">Vérifier sur le smartphone sa bonne configuration dans :<br />
+                        Paramètres > Appareils connectés > Préférences USB ou USB > Transfert de fichiers<br />
+                        Ou pour certains : Partage de connexion > USB > Périphérique multimédia MTP<br />
+                        Ou pour d'autres, quelque-chose d'approchant.</li>
+   
+     <li class="espace2">Ouvrir le gestionnaire de fichiers : Simple clic > Applications > Gestionnaire de fichiers</li>
+      <p><img class="box10" src="../images/xfce/xfce14.png" alt="..." /></p>    
+     <li class="espace2">Le gestionnaire de fichiers Thunar s'ouvre.<br />
+			Dans le volet latéral gauche sous « <strong>Périphériques</strong> » apparaît le smartphone<br />
+			 sous le nom : MEMOsmart (ce ne sera pas le même nom)</li>
+      <p><img class="box14" src="../images/smartphone/smart02.png" alt="..." /></p>
+     <li class="espace2">Simple clic > smartphone « MEMOsmart »<br />
+	Dans la zone principale apparaît un fichier qui se trouve sur le smartphone.<br />
+	Dans cet exemple : « Espace de stockage interne partagé »<br />
+	Il se peut que ce fichier n'apparaisse pas, passer à l'étape suivante.</li>
+       <p><img class="box14" src="../images/smartphone/smart03.png" alt="..." /></p>
+      <li class="espace2">Double clic > Espace de stockage interne partagé<br />
+        Il se peut que ce fichier n'apparaisse pas, passer à l'étape suivante.</li>
+       <p><img class="box14" src="../images/smartphone/smart03bis.png" alt="..." /></p>
+     <li class="espace2">Dans la zone principale apparaît une liste de dossiers qui se trouvent sur le smartphone.<br />
+	Le dossier « DCIM » doit apparaître dans cette liste.</li>
+      <p><img class="box14" src="../images/smartphone/smart04.png" alt="..." /></p>
+     <li class="espace2">Double clic > DCIM</li>
+      <p><img class="box14" src="../images/smartphone/smart05.png" alt="..." /></p>
+     <li class="espace2">Le dossier « Camera » doit apparaître.</li>
+      <p><img class="box14" src="../images/smartphone/smart06.png" alt="..." /></p>
+     <li class="espace2">Double clic > Camera</li>
+      <p><img class="box14" src="../images/smartphone/smart07.png" alt="..." /></p>
+     <li class="espace2">Dans la zone principale apparaît toutes les photos qui se trouvent sur le smartphone.<br />
+        		Les fichiers des photos sont en général en « .jpg ».</li>
+      <p><img class="box14" src="../images/smartphone/smart08.png" alt="..." /></p>
+     <li class="espace2">Dans cet exemple, seule la copie de la première photo sera faite.<br />	
+			Il est possible de faire une sélection multiple.<br />
+			Clic droit sur le premier fichier (première photo)</li>
+      <p><img class="box14" src="../images/smartphone/smart10bis.png" alt="..." /></p>
+     <li class="espace2">Une liste déroulante apparaît ; à cette étape il est possible de :<br />
+			Visualiser la photo : Ouvrir avec le « Visionneur d'images Ristretto ».<br />
+			Ouvrir avec > une autre application<br />
+			L'envoyer vers > ...<br />
+			Couper ou copier le fichier (la photo) vers le disque dur du PC ou un support externe.<br />
+			Supprimer le fichier (la photo)<br />
+			Renommer le fichier (la photo)<br />
+			Propriétés du fichier (de la photo)</li>
+      <p><img class="box14" src="../images/smartphone/smart10.png" alt="..." /></p>
+     <li class="espace2">L'exemple est de copier la première photo du smartphone vers le disque dur du PC 
+												dans le dossier Images<br />
+			Simple clic > Copier</li>
+      <p><img class="box14" src="../images/smartphone/smart13.png" alt="..." /></p>
+     <li class="espace2">Simple clic > Debian (nom du simple utilisateur)<br />
+			Nota : Les images qui suivent sont aussi utilisées sur une autre page de ce site, c'est pour cela que le 
+			smartphone a disparu sous «<strong> Périphériques </strong>». Ne pas s'inquiéter, de votre côté, il est toujours visible.</li>
+      <p><img class="box14" src="../images/smartphone/smart14.png" alt="..." /></p>
+     <li class="espace2">Double clic > Images</li>
+      <p><img class="box14" src="../images/smartphone/smart15.png" alt="..." /></p>
+     <li class="espace2">Positionner le pointeur de la souris dans la zone principale.</li>
+      <p><img class="box14" src="../images/smartphone/smart16.png" alt="..." /></p>
+     <li class="espace2">Clic droit, une liste déroulante apparaît.</li>
+      <p><img class="box14" src="../images/smartphone/smart17.png" alt="..." /></p>
+     <li class="espace2">Simple clic > coller</li>
+      <p><img class="box14" src="../images/smartphone/smart18.png" alt="..." /></p>
+     <li class="espace2">Le fichier « IMG_20231231_1.jpg » (la première photo), a été copié dans le dossier Images.<br />
+			Nota : Il est possible de sélectionner plusieurs fichiers (photos) pour les importer.</li>
+      <p><img class="box14" src="../images/smartphone/smart19.png" alt="..." /></p>
+     <li class="espace2">Si besoin, se rendre au chapitre : 
+			<a class="lienpage" href="../index.html#connecter">Débrancher le smartphone</a> en toute sécurité</li>
+     <li class="espace2">Fermer le gestionnaire de fichiers : Simple clic > Fichier > Fermer la fenêtre</li>
+     <p><img class="box10" src="../images/thunar/thunar05.png" alt="..." /></p>
+  </ul>
+
+
+<!-- bandeau fin de page -->
+<div class="container">
+  <div class="box3">
+    <img class="box3" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+   <div class="box4">
+    <a href="../index.html#connecter">
+				<img class="box4" title="Accueil" src="../images/logos/tux.png" alt="Tux" /></a>
+    <div class="accueil">Retour</div>
+  </div>
+   <div class="box5">
+     <img class="box5" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+</div>
+  <p>Informations sur le <a class="lienpage" href="infolibre.html" alt="">logiciel libre</a> et 
+                                                                <a class="lienpage" href="merci.html">Merci</a>.</p>
+
+<!-- Marques dépossées -->
+<p class="charte"><a href="https://www.debian.org/trademark" target="_blank" title="https://www.debian.org/trademark">Marques déposées</a> : 
+   Ce site ne fait pas partie de <strong>Debian</strong>, n'est pas produit par le projet 
+                                        <strong>Debian</strong>, ni approuvé par le projet <strong>Debian</strong>.<br />
+   Ce site n'est pas affilié à <strong>Debian</strong>. <strong>Debian</strong> est une marque déposée appartenant 
+                                                                                à Software in the Public Interest, Inc.</p>
+<p class="charte"><a href="https://www.xfce.org/getinvolved" target="_blank" title="https://www.xfce.org/getinvolved">Contribuer</a> : 
+   Ce site ne fait pas partie de <strong>XFCE</strong>, n'est pas produit par le projet 
+                                                <strong>XFCE</strong>, ni approuvé par le projet <strong>XFCE</strong>.<br />
+   Ce site n'est pas affilié à <strong>XFCE</strong>.</p>
+
+<p class="charte">Ce site est juste réalisé par un passionné.</p>
+
+</body>
+</html>
+
+

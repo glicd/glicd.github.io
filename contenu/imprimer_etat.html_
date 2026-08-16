@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Debian bureau Xfce imprimante</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <h1>GLICD</h1>
+  <h2></h2>
+  <body>
+    <img src="../images/tux.png" title="Tux est un manchot, mascotte officielle du noyau Linux">
+    <script src="scripts/main.js"></script>
+  </body>
+
+
+  <p id="automatique"><span class="bold-titre">L'état d'impression du document : </span>
+                        <a href="https://www.debian.org/index.fr.html" target="_blank">Debian</a> et 
+                        <a href="https://xfce.org/" target="_blank">Xfce</a>.</p>
+
+  <p>Après avoir lancer une impression sur une application, il est possible de connaître l'état de l'impression.</p>
+
+  <ul>
+    <li class="espace2">En haut à droite du bureau apparaît l'icône imprimante:</li>
+    <p><img class="box9" src="../images/etat_impression/etat13.png" title="etat13"/></p>
+    <li class="espace2">Positionner le pointeur de la souris sur cette icône puis simple clic</br>
+			Une fenêtre s'ouvre : « Etat d'impression du document (mes tâches) »</li>
+    <p><img class="box14" src="../images/imprimante/imprimante37.png" title="imprimante37"/></p>
+    <li class="espace2">Lorsque la tâche d'impression est fini, la fenêtre doit être vide</li>
+    <p><img class="box14" src="../images/imprimante/imprimante36.png" title="imprimante36"/></p>
+    <li class="espace2">Si l'impression ne sait pas faite, La tâche reste alors en traitement en cours</br>
+	il est possible à l'aide des icônes de : Relancer, stoper, supprimer, etc..., la tâche en cours.</li>
+    <li class="espace2">Pour fermer cette fenêtre simple clic > Petite croix</li>
+  </ul>
+
+
+<div class="container">
+  <div class="box3">
+    <img class="box3" title="Retour" src="../images/tux.png" alt="Tux" />
+  </div>
+  <div class="box4">
+    <a href="../index.html#imprimante" alt="Accueil">
+                                                <img class="box4" title="Accueil" src="../images/tux.png" alt="Tux" /></a>
+    <div class="accueil">Retour</div>
+  </div>
+  <div class="box5">
+     <img class="box5" title="Suivant" src="../images/tux.png" alt="Tux" />
+  </div>
+</div>
+  <p><a href="merci.html">Merci</a></p>
+<!--notation-->
+
+</html>
+
+

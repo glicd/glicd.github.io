@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <meta charset="utf-8">
+       <title>Debian et Xfce configuration des sources Apt</title>
+       <link href="../styles/style.css" rel="stylesheet" type="text/css">
+       <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <h1>GLICD</h1>
+  <h2></h2>
+<!-- debut logo -->
+  <div class="containerlogos">
+   <div class="logodebian">
+    <a href="https://www.debian.org/logos/" target="_blank">
+    <img class="logodebian" src="../images/logos/openlogo.svg" title="https://www.debian.org/logos/"></a>
+   </div>
+  <div class="logosymbole">
+   <div class="logosymbole">&</div>
+  </div>
+   <div class="logoxfce">
+    <a href="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg" target="_blank">
+    <img class="logoxfce" src="../images/logos/XFCE4Logo.svg" title="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg"></a>
+   </div>
+  </div>
+<!-- fin logo -->
+
+<p><span class="bold-titre">Configurer les sources de Apt (advanced package tool) en mode console en utilisant l'Emulateur de terminal :</span> <a href="https://www.debian.org" target="_blank" title="https://www.debian.org">Debian</a></p>
+<p>Configurer le fichier sources.list, qui se trouve dans : /etc/apt/sources.list</p>
+
+<p class="espace1" id="terminal"><span class="bold-titre1">L'Emulateur de terminal</span> :</p>
+<p>L'Emulateur de terminal est une application qui fournit une interface utilisateur textuelle.<br />
+	C'est ce que l'on appelle une interface en ligne de commande. C'est souvent le moyen le plus simple, 
+			le plus rapide et le plus puissant d'effectuer une certaines tâche.<br />
+<p>Attention : L'Emulateur de terminal est à utiliser avec le plus grand soin.</p>
+<p><strong> AVANT de poursuivre, consulter
+                SourcesList du</strong><a href="https://wiki.debian.org/fr/SourcesList" target="_blank" title="https://wiki.debian.org/fr/SourcesList"> wiki.debian</a></p>
+<ul>
+   <ol>
+      <li>Ouvrir l'Emulateur de terminal : Simple clic > Applications > Emulateur de terminal.</li>
+	 <p><img class="box13" src="../images/xfce/xfce13.png" alt="..." /></p>
+      <li class="espace2">Le Terminal s'ouvre en simple utilisateur puisqu'il y a le symbole « $ ».</li>
+	 <p><img class="box7" src="../images/terminal/terminal1.png" alt="..." /></p>
+      <li class="espace2">Pour se connecter au compte Root (superutilisateur) saisir :<span class="bold-texte"> « <strong> su -</strong> »
+							</span> puis valider avec la touche Entrée du clavier.</li>
+         <p><img class="box7" src="../images/terminal/terminal2.png" alt="..." /></p>
+      <li class="espace2">Saisir le mot de passe du "superutilisateur" Root, rien ne va apparaître à l'écran puis valider avec la 
+											touche Entrée du clavier.</li>
+         <p><img class="box7" src="../images/terminal/terminal3.png" alt="..." /></p>
+      <li class="espace2">Si le croisillon « # » s'affiche, alors bienvenue dans le compte administrateur.</li>
+	 <p><img class="box7" src="../images/terminal/terminal4.png" alt="..." /></p>        
+      <li class="espace2">Saisir :<span class="bold-texte"> nano /etc/apt/sources.list</span> puis valider avec la touche Entrée 
+													du clavier.</li>
+	<p><img class="box7" src="../images/terminal/terminal14.png" alt="..." /></p>
+      <li class="espace2">Si l'installation de Debian a été faite via un support externe (exemple : clé usb) associé à une connexion 
+													internet : <br />
+          Le fichier sources.list doit ressembler à celui ci-dessous.</li>
+         <p><img class="box7" src="../images/terminal/terminal5.png" alt="..." /></p>
+      <li class="espace2">Si les prochaines mises à jour s'effectuent par internet, il n'y a plus besoin de pointer sur le cdrom.<br />
+           <strong>AVANT de poursuivre, consulter SourcesList du
+                        </strong><a href="https://wiki.debian.org/fr/SourcesList" target="_blank"> wiki.debian</a><br />
+          Changement de http > https pour utiliser les dépots sur des connexions HTTPS chiffrées.<br />
+          Et, si souhaité, ajouter les composants "contrib non-free"</li>
+          <p>Si souhaité, modifier :</p>
+           <p><img class="box7" src="../images/sourceslist/sourceslist01.png" alt="..." /></p>
+         <p>par :</p>
+           <p><img class="box7" src="../images/sourceslist/sourceslist04.png" alt="..." /></p>
+         <p>La ligne : deb cdrom : [ Debian GNU/Linux 12.2.0_ bookworm ...] peut être effacée.<br />
+	    Ou ajouter le croisillon « # » ce qui veut dire que la commande concernant le cdrom ne sera plus prise 
+													en compte.</p> 
+           <p><img class="box7" src="../images/terminal/terminal6.png" alt="..." /></p>
+         <li class="espace2"><p>Enregistrer avec les touches du clavier : Ctrl et la lettre « o » puis valider avec la touche Entrée 
+													du clavier</p></li>
+         <li>Sortir avec les touches du clavier : Ctrl et la lettre « x »</li>
+         <li><p>Retourner dans :<span class="bold-texte"> nano /etc/apt/sources.list</span>, les modifications ont été
+                                                                                                       enregistrées.</p></li>
+         <li>Sortir avec les touches du clavier : Ctrl et la lettre « x »</li>
+	   <p><img class="box7" src="../images/terminal/terminal7.png" alt="..." /></p>           
+	 <li class="espace2">Pour sortir du compte administrateur saisir : exit (valider avec la touche Entrée du clavier)</li>
+	   <p><img class="box7" src="../images/terminal/terminal8.png" alt="..." /></p>        
+	 <li class="espace2">On se retrouve sur le compte simple utilisateur puisqu'il y a le symbole « $ ».</li>
+	   <p><img class="box7" src="../images/terminal/terminal9.png" alt="..." /></p>      
+	 <li class="espace2">Pour consulter la documentation du Terminal : Simple clic > Aide > Guide d'utilisation</li>
+           <p><img class="box7" src="../images/terminal/terminal13.png" alt="..." /></p>
+     	 <li class="espace2">Sortir du compte simple utilisateur à l'aide du clavier saisir : exit > valider avec la touche Entrée du clavier</li>
+           <p><img class="box7" src="../images/terminal/terminal10.png" alt="..." /></p>    
+    </ol>
+</ul>
+
+<!-- Bandeau fin de page -->
+<div class="container">
+  <div class="box3">
+    <img class="box3" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+   <div class="box4">
+    <a href="../index.html#chapitre_installation">
+						<img class="box4" title="Accueil" src="../images/logos/tux.png" alt="Tux" /></a>
+    <div class="accueil">Retour</div>
+  </div>
+   <div class="box5">
+     <img class="box5" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+</div>
+
+  <p>Informations sur le <a class="lienpage" href="infolibre.html" alt="">logiciel libre</a> et 
+                                                                <a class="lienpage" href="merci.html">Merci</a>.</p>
+
+<!-- Marques dépossées -->
+<p class="charte"><a href="https://www.debian.org/trademark" target="_blank" title="https://www.debian.org/trademark">Marques déposées</a> : 
+   Ce site ne fait pas partie de <strong>Debian</strong>, n'est pas produit par le projet 
+                                        <strong>Debian</strong>, ni approuvé par le projet <strong>Debian</strong>.<br />
+   Ce site n'est pas affilié à <strong>Debian</strong>. <strong>Debian</strong> est une marque déposée appartenant 
+                                                                                à Software in the Public Interest, Inc.</p>
+<p class="charte"><a href="https://www.xfce.org/getinvolved" target="_blank" title="https://www.xfce.org/getinvolved">Contribuer</a> : 
+   Ce site ne fait pas partie de <strong>XFCE</strong>, n'est pas produit par le projet 
+                                                <strong>XFCE</strong>, ni approuvé par le projet <strong>XFCE</strong>.<br />
+   Ce site n'est pas affilié à <strong>XFCE</strong>.</p>
+
+<p class="charte">Ce site est juste réalisé par un passionné.</p>
+
+</body>
+</html>
+
+

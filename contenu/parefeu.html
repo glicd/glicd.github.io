@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Debian et Xfce le pare-feu avec l'interface utilisateur graphique gufw</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <h1>GLICD</h1>
+  <h2></h2>
+<!-- debut logo -->
+  <div class="containerlogos">
+   <div class="logodebian">
+    <a href="https://www.debian.org/logos/" target="_blank">
+    <img class="logodebian" src="../images/logos/openlogo.svg" title="https://www.debian.org/logos/"></a>
+   </div>
+  <div class="logosymbole">
+   <div class="logosymbole">&</div>
+  </div>
+   <div class="logoxfce">
+    <a href="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg" target="_blank">
+    <img class="logoxfce" src="../images/logos/XFCE4Logo.svg" title="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg"></a>
+   </div>
+  </div>
+<!-- fin logo -->
+
+  <p><span class="bold-titre">Le pare-feu avec l'interface utilisateur graphique gufw : </span> 
+	<a href="https://costales.github.io/projects/gufw/" target="_blank" title="https://costales.github.io/projects/gufw/">Projects/gufw</a></p>
+  <p>Le pare-feu est un composant essentiel de la sécurité de votre réseau domestique.<br />
+     Lire la suite plus détaillée 
+			<a href="https://doc.ubuntu-fr.org/pare-feu" target="_blank" title="https://doc.ubuntu-fr.org/pare-feu">ici</a>.</p>
+
+  <p class="espace4">Gufw est un moyen facile et intuitif pour gérer un pare-feu Linux.<br />
+      C'est l'interface utilisateur graphique pour ufw.<br />
+      L'utilisation de la ligne de commande ne sera pas vue ici.</p>
+
+  <p class="espace4">Installer les paquets suivants :</p>
+	<ul>
+           <li><strong>gufw</strong> : l'interface graphique de ufw <a href="https://packages.debian.org/bookworm/gufw" target="_blank" title="https://packages.debian.org/bookworm/gufw">Paquet/gufw</a></li>
+           <li><strong>ufw</strong> : programme pour la gestion du pare-feu netfilter, utilise iptables ou nftables <a href="https://packages.debian.org/bookworm/ufw" target="_blank" title="https://packages.debian.org/bookworm/ufw">Paquet/ufw</a><br />
+                Lien : <a href="https://launchpad.net/ufw" target="_blank" title="https://launchpad.net/ufw">Ufw</a> ou
+                <a href="https://wiki.archlinux.org/title/Uncomplicated_Firewall" target="_blank" title="https://wiki.archlinux.org/title/Uncomplicated_Firewall">Archlinux</a> ou 
+	<a href="https://guide.ubuntu-fr.org/server/firewall.html" target="_blank" title="https://guide.ubuntu-fr.org/server/firewall.html">Ubuntu-fr</a></li>
+           <li><strong>nftables</strong> : (installé par défaut) nftables est le framework de pare-feu par défaut 
+											et recommandé dans Debian.<br /> 
+		lien : <a href="https://wiki.debian.org/nftables" target="_blank" title="https://wiki.debian.org/nftables">wiki.debian/nftables</a></li>
+	</ul>
+
+  <p class="espace4">Pour l'installation des paquets se reporter au chapitre :
+                        <a class="lienpage" href="../index.html#ajout_appli">Ajout d'une application ou de paquets</a></p>
+
+  <p class="espace4">En conclusion : nftables > iptables > ufw > gufw </p>
+		
+  <ul>
+     <li class="espace1">Après avoir installé les paquets, configurer le pare-feu.</li> 
+     <li class="espace2">Ouvrir l'interface graphique <strong>gufw</strong> :<br />
+	Simple clic > Applications > Paramètres > Configuration du pare-feu<br />
+	Simple clic > Configuration du pare-feu</li>
+      <p><img class="box9" src="../images/parefeu/parefeu00.png" alt="..." /></p>    
+     <li class="espace2">Une fenêtre apparaît :<br />
+	« Authentification requise pour accéder à la configuration du pare-feu »</li>
+      <p><img class="box9" src="../images/parefeu/parefeu01.png" alt="..." /></p>
+     <li class="espace2">Saisir le mot de passe pour Root (superutilisateur)<br />
+            Valider avec la touche « Entrée » du clavier<br />
+            Ou simple clic > S'authentifier</li>
+      <p><img class="box9" src="../images/parefeu/parefeu07.png" alt="..." /></p>
+     <li class="espace2">L'interface graphique <strong>gufw</strong> s'ouvre.</li>
+      <p><img class="box16" src="../images/parefeu/parefeu02.png" alt="..." /></p>
+     <li class="espace2">Tout est grisé, le pare-feu n'est pas configuré.</li>
+     <li class="espace2">Positionner le pointeur de la souris sur le bouton « Etat » puis simple clic.<br />
+		Comme sur l'image ci-dessous</li>
+      <p><img class="box16" src="../images/parefeu/parefeu03.png" alt="..." /></p>
+    <li class="espace2">Le pare-feu a changé d'état, le pare-feu est maintenant activé.</li>
+      <p><img class="box16" src="../images/parefeu/parefeu04bis.png" alt="..." /></p>
+    <li class="espace2">Le profil par défaut peut suffir : Lire ce qui est indiqué sous <strong>Basique</strong>.<br />
+ 		<ol type="1">
+                        <li>Profil = Domestique</li>
+			<li>Etat = Activé (bouton de couleur bleue)</li>
+			<li>Entrant = Refuser</li>
+			<li>Sortant = Autoriser</li>
+		</ol>
+      <p><img class="box16" src="../images/parefeu/parefeu04.png" alt="..." /></p>
+    <li class="espace2">Pour aller plus loin : non décrit ici.<br />
+			simple clic > Règles<br />
+                        simple clic > Rapports<br />
+                        simple clic > journal<br />
+			Plus d'informations : 
+		<a href="https://help.ubuntu.com/community/Gufw" target="_blank" title="https://help.ubuntu.com/community/Gufw">help.ubuntu/Gufw</a></li>
+    <li class="espace2">Les paramètres restent inchangés jusqu'au prochain changement.</li>
+    <li class="espace2">Quitter le pare-feu<br />
+			Simple clic > Fichiers (en haut à gauche)</li>
+      <p><img class="box16" src="../images/parefeu/parefeu05.png" alt="..." /></p>
+    <li class="espace2">Simple clic > Quitter</li>
+      <p><img class="box16" src="../images/parefeu/parefeu06.png" alt="..." /></p>
+    <li class="espace2">Cette procédure est à effectuer qu'une seule fois jusqu'aux prochaines modifications, si besoin.</li>
+  </ul>
+
+<!-- bandeau fin de page -->
+<div class="container">
+  <div class="box3">
+    <img class="box3" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+   <div class="box4">
+    <a href="../index.html#applications">
+					<img class="box4" title="Accueil" src="../images/logos/tux.png" alt="Tux" /></a>
+    <div class="accueil">Retour</div>
+  </div>
+   <div class="box5">
+     <img class="box5" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+</div>
+ <p>Informations sur le <a class="lienpage" href="infolibre.html" alt="">logiciel libre</a> et 
+                                                                <a class="lienpage" href="merci.html">Merci</a>.</p>
+
+<!-- Marques dépossées -->
+<p class="charte"><a href="https://www.debian.org/trademark" target="_blank" title="https://www.debian.org/trademark">Marques déposées</a> : 
+   Ce site ne fait pas partie de <strong>Debian</strong>, n'est pas produit par le projet 
+                                        <strong>Debian</strong>, ni approuvé par le projet <strong>Debian</strong>.<br />
+   Ce site n'est pas affilié à <strong>Debian</strong>. <strong>Debian</strong> est une marque déposée appartenant 
+                                                                                à Software in the Public Interest, Inc.</p>
+<p class="charte"><a href="https://www.xfce.org/getinvolved" target="_blank" title="https://www.xfce.org/getinvolved">Contribuer</a> : 
+   Ce site ne fait pas partie de <strong>XFCE</strong>, n'est pas produit par le projet 
+                                                <strong>XFCE</strong>, ni approuvé par le projet <strong>XFCE</strong>.<br />
+   Ce site n'est pas affilié à <strong>XFCE</strong>.</p>
+
+<p class="charte">Ce site est juste réalisé par un passionné.</p>
+
+</body>
+</html>
+
+

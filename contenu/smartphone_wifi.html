@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Debian et Xfce utiliser le smartphone pour connecter le PC à un réseau wi-fi</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <h1>GLICD</h1>
+  <h2></h2>
+<!-- debut logo -->
+  <div class="containerlogos">
+   <div class="logodebian">
+    <a href="https://www.debian.org/logos/" target="_blank">
+    <img class="logodebian" src="../images/logos/openlogo.svg" title="https://www.debian.org/logos/"></a>
+   </div>
+  <div class="logosymbole">
+   <div class="logosymbole">&</div>
+  </div>
+   <div class="logoxfce">
+    <a href="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg" target="_blank">
+    <img class="logoxfce" src="../images/logos/XFCE4Logo.svg" title="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg"></a>
+   </div>
+  </div>
+<!-- fin logo -->
+
+  <p><span class="bold-titre">Utiliser le smartphone pour connecter le PC à un réseau (internet) via le wi-fi : </span> 
+                        <a href="https://www.debian.org" target="_blank" title="https://www.debian.org">Debian</a> et
+                                          <a href="https://xfce.org" target="_blank" title="https://xfce.org">Xfce</a></p>
+  <p>Ceci est très utile pour les PC qui ne sont pas équipés d'une carte wi-fi.<br />
+     Le smartphone va remplacer la carte wi-fi ou la clé USB wi-fi.</p>
+
+  <p>La solution du wi-fi permet de se connecter à un réseau (internet), sans câble, n'importe où chez soi
+  (mais cela dépend quand même de la portée du
+<a href="https://fr.wikipedia.org/wiki/Wi-Fi" target="_blank" title="https://fr.wikipedia.org/wiki/Wi-Fi">wi-fi</a>).<br />
+     Elle permet aussi de ne pas consommer de data sur le forfait téléphone mobile.</p>
+
+  <p>Pour bien comprendre l'exemple qui va suivre, ne pas brancher le PC à la box via un câble, ou à un réseau.<br />
+     Dans cet exemple, Android est le système d'exploitation du
+                                    <a href="https://fr.wikipedia.org/wiki/Smartphone" target="_blank" title="https://fr.wikipedia.org/wiki/Smartphone">smartphone</a>.<br />
+     Le smartphone doit être connecté au réseau wi-fi de la box.</p>
+  <ul>
+     <li class="espace2">Se reporter dans un premier temps au chapitre :
+                <a class="lienpage" href="../index.html#reseau">Les périphériques réseaux (Internet)</a></li>
+     <li class="espace2">En haut à droite du bureau l'icône « Périphériques réseaux (Internet) » doit être dans 
+												cette configuration.</li>
+      <p><img class="box19" src="../images/xfce/xfce85.png" alt="..." /></p>
+     <li class="espace2">Placer le pointeur de la souris sur l'icône :<br />
+			 La notification « Aucune connexion réseau » doit apparaître.</li>
+      <p><img class="box9" src="../images/smartphone/smart20.png" alt="..." /></p>    
+     <li class="espace2">Simple clic sur l'icône</li>
+      <p><img class="box9" src="../images/smartphone/smart22.png" alt="..." /></p>
+     <li class="espace2">Aucun réseau Ethernet disponible, puisqu'il n'y a aucun choix de réseau.<br />
+			Connexions VPN, non vu ici.</li>
+     <li class="espace2">Déverrouiller le smarphone à l'aide de votre code. Si le smartphone est 
+                                         verrouillé la connexion ne se fera peut-être pas.<br />
+	 Connecter le smartphone au PC à l'aide d'un câble USB, le smartphone apparaît sur le bureau.<br />
+	 Dans cet exemple, le smarphone apparaît sur le bureau sous le nom : MEMOsmart</li>
+      <p><img class="box11" src="../images/smartphone/smart01.png" alt="..." /></p>
+     <li class="espace2">Vérifier sur le smartphone sa bonne configuration dans :<br />
+                        Paramètres > Appareils connectés > Préférences USB > Partage de connexion via USB<br />
+                        Ou pour certains : Partage de connexion > USB > Partage de connexion via USB<br />
+                        Ou pour d'autres, quelque-chose d'approchant.</li>
+     <li class="espace2">Une notification apparaît:<br />
+         "Connexion établie, vous êtes maintenant connecté à « Wired connection 1 »"<br />
+      <p><img class="box9" src="../images/smartphone/smart23.png" alt="..." /></p>
+     <li class="espace2">En haut à droite du bureau l'icône « Périphériques réseaux (Internet) » est maintenant dans
+                                                                                                cette configuration.</li>
+      <p><img class="box19" src="../images/xfce/xfce75.png" alt="..." /></p>
+     <li>Placer le pointeur de la souris sur l'icône, comme ci-dessous :</li>
+      <p><img class="box14" src="../images/xfce/xfce18bis.png" alt="..." /></p>
+     <li class="espace2">Une notification apparaît :<br />
+         "Connexion au réseau Ethernet « Wired connection 1 » active"<br />
+          Cela veut dire que le PC est bien connecté à un réseau (qui permet d'accéder à internet) et le nom
+                                                de la connexion est « Wired connection 1 ».<br />
+	  Simple clic sur l'icône</li>
+      <p><img class="box14" src="../images/xfce/xfce18.png" alt="..." /></p>
+     <li class="espace2">Une liste déroulante apparaît.<br />
+	  Le réseau Ethernet avec le nom du smartphone : (ici) MEMOsmart<br />
+          Et le réseau Ethernet (Realtek RTL8111/8168/8411)</li>
+      <p><img class="box14" src="../images/smartphone/smart21.png" alt="..." /></p>
+     <li class="espace2">Le wi-fi de la box doit être activé.<br />
+                         Le wi-fi doit être configuré entre le smartphone et la box, un exemple
+<a href="https://cours-informatique-gratuit.fr/cours/connecter-son-smartphone-au-reseau-wi-fi/" target="_blank" title="https://cours-informatique-gratuit.fr/cours/connecter-son-smartphone-au-reseau-wi-fi/">
+                                                                                cours-informatique</a></li>
+      <li class="espace2">Sur le smartphone et pour bien comprendre l'exemple :<br />
+                Activer le wi-fi<br />
+                Désactiver le bluetooth<br />
+                Désactiver les « Données mobiles ». Les données mobiles permettent l'accès à internet directement
+                                                          via le smartphone sans passer par le réseau wi-fi de la box.</li>
+     <li class="espace2">Vérifier la connexion, ouvrir le naviguateur internet Firefox<br />
+	  Simple clic > Applications > Internet > Firefox ESR</li>
+      <p><img class="box9" src="../images/xfce/xfce107.png" alt="..." /></p>
+     <li class="espace2">L'application Firefox s'ouvre et il est maintenant possible de naviguer sur internet.</li>
+     <li class="espace2">Ne pas laisser le wi-fi actif sur le smartphone lorsqu'il n'est plus utilisé.<br />
+     <li class="espace2">Sur le smartphone avant de le débrancher :<br />
+			Désactiver le wi-fi<br />
+		Puis dans : Paramètres > Appareils connectés > Préférences USB > Aucun transfert de données<br />
+                        Ou pour certains : Partage de connexion > USB > Aucun transfert de données<br />
+                        Ou pour d'autres, quelque-chose d'approchant</li>
+      <li class="espace2">Une notification apparaît :<br />
+         Déconnecté : La connexion réseau a été déconnectée.<br />
+      <p><img class="box9" src="../images/smartphone/smart24.png" alt="..." /></p>
+      <li class="espace2">Débrancher le smartphone</li>
+  </ul>
+
+<!-- bandeau fin de page -->
+<div class="container">
+  <div class="box3">
+    <img class="box3" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+   <div class="box4">
+    <a href="../index.html#cartewifi">
+					<img class="box4" title="Accueil" src="../images/logos/tux.png" alt="Tux" /></a>
+    <div class="accueil">Retour</div>
+  </div>
+   <div class="box5">
+     <img class="box5" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+</div>
+  <p>Informations sur le <a class="lienpage" href="infolibre.html" alt="">logiciel libre</a> et 
+                                                                <a class="lienpage" href="merci.html">Merci</a>.</p>
+
+<!-- Marques dépossées -->
+<p class="charte"><a href="https://www.debian.org/trademark" target="_blank" title="https://www.debian.org/trademark">Marques déposées</a> : 
+   Ce site ne fait pas partie de <strong>Debian</strong>, n'est pas produit par le projet 
+                                        <strong>Debian</strong>, ni approuvé par le projet <strong>Debian</strong>.<br />
+   Ce site n'est pas affilié à <strong>Debian</strong>. <strong>Debian</strong> est une marque déposée appartenant 
+                                                                                à Software in the Public Interest, Inc.</p>
+<p class="charte"><a href="https://www.xfce.org/getinvolved" target="_blank" title="https://www.xfce.org/getinvolved">Contribuer</a> : 
+   Ce site ne fait pas partie de <strong>XFCE</strong>, n'est pas produit par le projet 
+                                                <strong>XFCE</strong>, ni approuvé par le projet <strong>XFCE</strong>.<br />
+   Ce site n'est pas affilié à <strong>XFCE</strong>.</p>
+
+<p class="charte">Ce site est juste réalisé par un passionné.</p>
+
+</body>
+</html>
+
+

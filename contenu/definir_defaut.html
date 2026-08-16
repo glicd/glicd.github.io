@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Debian et Xfce définir l'application par défaut par l'utilisateur</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <h1>GLICD</h1>
+  <h2></h2>
+<!-- debut logo -->
+  <div class="containerlogos">
+   <div class="logodebian">
+    <a href="https://www.debian.org/logos/" target="_blank">
+    <img class="logodebian" src="../images/logos/openlogo.svg" title="https://www.debian.org/logos/"></a>
+   </div>
+  <div class="logosymbole">
+   <div class="logosymbole">&</div>
+  </div>
+   <div class="logoxfce">
+    <a href="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg" target="_blank">
+    <img class="logoxfce" src="../images/logos/XFCE4Logo.svg" title="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg"></a>
+   </div>
+  </div>
+<!-- debut logo -->
+
+  <p><span class="bold-titre">Définir l'application par défaut par l'utilisateur : </span>
+				<a href="https://xfce.org" target="_blank" title="https://xfce.org"> Le site Xfce.</a></p>
+  <p>Sur Debian avec le bureau Xfce, les applications sont définies automatiquement en fonction du fichier à ouvrir.
+     Mais l'utilisateur a la possibilité d'ouvrir un fichier avec une autre application que celle définie automatiquement.<br />
+     En définissant une application par défaut par l'utilisateur, celle-ci sera toujours appliquée.<br />
+     En cas de nouveau choix d'application, pour retrouver l'application définie automatiquement, il faudra la sélectionner à nouveau.</p>
+
+  <p>Exemple : Définir l'application « Parole » par défaut par l'utilisateur pour les fichiers de musique « .mp3 ».</p> 
+
+   <ul>
+        <li class="espace2">Ouvrir le gestionnaire de fichiers : Simple clic > Applications > Gestionnaire de fichiers</li>
+        <p><img class="box11" src="../images/xfce/xfce14.png" alt="..." /></p>
+        <li class="espace2">Le gestionnaire de fichiers Thunar s'ouvre.<br />
+                            Ici, debian (nom utilisateur) doit être en bleu.</li>
+        <p><img class="box14" src="../images/thunar/thunar06.png" alt="..." /></p>
+        <li class="espace2">Double clic > Musique</li>
+        <p><img class="box14" src="../images/thunar/thunar35.png" alt="..." /></p>
+        <li class="espace2">Clic droit sur le fichier à ouvrir « chanson.mp3 », un menu déroulant apparaît.</li>
+        <p><img class="box14" src="../images/thunar/thunar48.png" alt="..." /></p>
+        <li class="espace2">Dans cet exemple, l'application « Parole » est l'application définie automatiquement.<br />
+	Mais elle n'est pas définie par défaut par l'utilisateur</li>
+        <li class="espace2">Positionner le pointeur de la souris sur « Ouvrir avec »</li>
+        <p><img class="box14" src="../images/thunar/thunar73.png" alt="..." /></p>
+        <li class="espace2">Un menu déroulant apparaît avec des propositions.<br />
+        Simple clic > Définir l'application par défaut...</li>
+        <p><img class="box14" src="../images/thunar/thunar76.png" alt="..." /></p>
+        <li class="espace2">Une fenêtre s'ouvre :<br />
+	  <ul>
+<li class="espace4"><strong>Application par défaut</strong> : C'est l'application définie automatiquement lors de l'installation.</li>
+<li class="espace4"><strong>Applications recommandées</strong> : Ce sont les applications compatibles pour ouvrir correctement le fichier.<br />
+	Si besoin, choisir une application qui se trouve dans <strong>Applications recommandées</strong>.</li>
+<li class="espace4"><strong>Autres applications</strong> : Ce sont toutes les autres applications qui se trouvent sur le PC.<br />
+	En général, il n'y a pas besoin d'aller dans cette section.<br />
+	 Les applications risquent de ne pas être compatibles avec le fichier à ouvrir.</li>
+	  </ul>
+        <p><img class="box9" src="../images/thunar/thunar77.png" alt="..." /></p>
+        <li class="espace2">Simple clic > Lecteur multimédia Parole<br />
+        En bas de la fenêtre, cocher « Utiliser cette action par défaut pour ce type de fichier ».<br />
+		<strong>Nota</strong> :<br />
+	L'application « Quod Libet » aurait pu être choisie puisqu'elle est dans <strong>Applications recommandées</strong>.</li>
+        <p><img class="box9" src="../images/thunar/thunar78.png" alt="..." /></p>
+        <li class="espace2">Le bouton « Ouvrir » n'est plus grisé<br />
+	Simple clic > Ouvrir</li>
+        <p><img class="box9" src="../images/thunar/thunar79.png" alt="..." /></p> 
+        <li class="espace2">Le lecteur multimédia Parole s'ouvre</li>
+        <p><img class="box14" src="../images/thunar/thunar71.png" alt="..." /></p>
+        <li class="espace2">Quitter l'application « Parole »<br />
+                Simple clic > Media > Quitter</li>
+        <li class="espace2">Vérifier si l'application a bien été définie par défaut par l'utilisateur<br />
+	Simple clic > Applications > Paramètres > Gestionnaire de paramètres</li>
+        <p><img class="box14" src="../images/parametres/parametre02.png" alt="..." /></p>
+        <li class="espace2">La fenêtre du gestionnaire de paramètres s'ouvre.</li>
+        <p><img class="box14" src="../images/parametres/parametre03.png" alt="..." /></p>
+        <li class="espace2">Positionner le pointeur de la souris sur « Applications par défaut »<br />
+			Simple clic > Applications par défaut</li>
+        <p><img class="box14" src="../images/parametres/parametre04.png" alt="..." /></p>
+        <li class="espace2">La fenêtre « Applications par défaut » s'ouvre</li>
+        <p><img class="box14" src="../images/parametres/parametre05.png" alt="..." /></p>
+        <li class="espace2">Positionner le pointeur de la souris sur « Autres »<br />
+			Simple clic > Autres</li>
+        <p><img class="box14" src="../images/parametres/parametre06.png" alt="..." /></p>
+        <li class="espace2">Un menu apparaît</li>
+        <p><img class="box14" src="../images/parametres/parametre07.png" alt="..." /></p>
+        <li class="espace2">Positionner le pointeur de la souris sur « Etat »<br />
+                        Simple clic > Etat</li>
+        <p><img class="box14" src="../images/parametres/parametre08.png" alt="..." /></p>
+        <li class="espace2">Les lignes qui sont inscrites en gras ont été définies par défaut par l'utilisateur.<br />
+	Les lignes qui ne sont pas en gras ont été définies automatiquement lors de l'installation.<br />
+        <li class="espace4">Résultat de la procédure qui a été faite ci-dessus :<br />
+		Positionner le pointeur de la souris sur « audio/mpeg »<br />
+		Simple clic > audio/mpeg<br />
+		« audio/mpeg » est maintenant surligné en bleu. Il est bien défini par l'utilisateur<br />
+		« audio MP3 » est indiqué dans le bandeau du bas</li>
+        <p><img class="box14" src="../images/parametres/parametre10.png" alt="..." /></p>
+        <p><img class="box14" src="../images/parametres/parametre11.png" alt="..." /></p>
+        <li class="espace2">Résultat, c'est l'application « Parole » qui sera toujours ouverte par défaut.<br />
+     La procédure reste la même avec n'importe quel fichier pour définir par défaut l'application choisie par l'utilisateur.
+			    Cette procédure est à faire qu'une seule fois.</li>
+        <li class="espace4">Toutes les applications peuvent être définies par défaut par l'utilisateur dans cette fenêtre.<br />
+		Avec le bouton « Ouvrir avec... »</li>
+        <li class="espace4">Fermer la fenêtre des applications par défaut<br />
+			Simple clic > Fermer</li>
+    </ul>
+
+  <p class="espace1"><strong>Nota</strong> : L'utilisateur peut ouvrir un fichier musique avec une autre application.<br />
+        Si besoin, se rendre au chapitre :<br /> 
+	Gestionnaire de fichiers avec Thunar : Ouvrir un fichier > Ouvrir avec une
+                                <a class="lienpage" href="../index.html#gestionnaire_thunar">autre</a> application</p>
+
+
+<!-- bandeau fin de page -->
+<div class="container">
+  <div class="box3">
+    <img class="box3" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+   <div class="box4">
+    <a href="../index.html#gestionnaire_thunar">
+					<img class="box4" title="Accueil" src="../images/logos/tux.png" alt="Tux" /></a>
+    <div class="accueil">Retour</div>
+  </div>
+   <div class="box5">
+     <img class="box5" title="" src="../images/logos/tux.png" alt="Tux" />
+   </div>
+</div>
+  <p>Informations sur le <a class="lienpage" href="infolibre.html" alt="">logiciel libre</a> et 
+                                                                <a class="lienpage" href="merci.html">Merci</a>.</p>
+
+<!-- Marques dépossées -->
+<p class="charte"><a href="https://www.debian.org/trademark" target="_blank" title="https://www.debian.org/trademark">Marques déposées</a> : 
+   Ce site ne fait pas partie de <strong>Debian</strong>, n'est pas produit par le projet 
+                                        <strong>Debian</strong>, ni approuvé par le projet <strong>Debian</strong>.<br />
+   Ce site n'est pas affilié à <strong>Debian</strong>. <strong>Debian</strong> est une marque déposée appartenant 
+                                                                                à Software in the Public Interest, Inc.</p>
+<p class="charte"><a href="https://www.xfce.org/getinvolved" target="_blank" title="https://www.xfce.org/getinvolved">Contribuer</a> : 
+   Ce site ne fait pas partie de <strong>XFCE</strong>, n'est pas produit par le projet 
+                                                <strong>XFCE</strong>, ni approuvé par le projet <strong>XFCE</strong>.<br />
+   Ce site n'est pas affilié à <strong>XFCE</strong>.</p>
+
+<p class="charte">Ce site est juste réalisé par un passionné.</p>
+
+</body>
+</html>
+
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Debian et Xfce imprimante, scanner avec l'application Numériseur de documents</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <h1>GLICD</h1>
+  <h2></h2>
+<!-- debut logo -->
+  <div class="containerlogos">
+   <div class="logodebian">
+    <a href="https://www.debian.org/logos/" target="_blank">
+    <img class="logodebian" src="../images/logos/openlogo.svg" title="https://www.debian.org/logos/"></a>
+   </div>
+  <div class="logosymbole">
+   <div class="logosymbole">&</div>
+  </div>
+   <div class="logoxfce">
+    <a href="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg" target="_blank">
+    <img class="logoxfce" src="../images/logos/XFCE4Logo.svg" title="https://fr.wikipedia.org/wiki/Fichier:Xfce_logo.svg"></a>
+   </div>
+  </div>
+<!-- debut logo -->
+
+  <p id="imprimante"><span class="bold-titre">Scanner avec l'application Numériseur de documents (Simple-scan) : </span>
+				<a href="https://gitlab.gnome.org/GNOME/simple-scan" target="_blank" title="https://gitlab.gnome.org/GNOME/simple-scan">Simple-scan</a></p>
+
+  <p class="espace4">Nota : L'application pour scanner <strong>XSane</strong> est installée par défaut. 
+                                        <a href="http://www.sane-project.org" target="_blank" title="http://www.sane-project.org">sane-project</a> puis le
+                <a href="https://packages.debian.org/bookworm/xsane" target="_blank" title="https://packages.debian.org/bookworm/xsane">Paquet/Xsane</a><br />
+	L'utilisation de l'application Xsane ne sera pas vue dans ce MEMO.</p>
+
+  <p class="espace4">Simple-scan est une application simple d'utilisation, conçue pour permettre aux utilisateurs de connecter 
+     leur scanner et d'obtenir rapidement l'image/document dans un format approprié.<br />
+      Simple-scan est d'une manière générale une interface à SANE - qui est le même programme de base que celui utilisé par XSANE. Cela implique que
+     les scanners existants fonctionneront et que l'interface a été largement testée.</p>
+  <p class="espace2">Installer le paquet suivant :</p>
+        <ul>
+           <li><strong>simple-scan </strong> <a href="https://packages.debian.org/bookworm/simple-scan" target="_blank" title="https://packages.debian.org/bookworm/simple-scan">Paquet/simple-scan</a></li>
+        </ul>
+
+  <p class="espace2">Pour l'installation des paquets se reporter au chapitre :
+                        <a class="lienpage" href="../index.html#ajout_appli">Ajout d'une application ou de paquets</a></p>
+
+  <p>Liste des scanners supportés par le projet
+	<a href="http://www.sane-project.org/sane-mfgs.html" target="_blank" title="http://www.sane-project.org/sane-mfgs.html">SANE</a></p>
+ 
+  <ul>
+    <li class="espace2">Dans cet exemple, le scanner utilisé est un simple scanner à plat.<br />
+			Il est branché au PC par un câble  
+				<a href="https://fr.wikipedia.org/wiki/USB" target="_blank" title="https://fr.wikipedia.org/wiki/USB">USB</a>.</li> 
+    <li class="espace2">Allumer le scanner</li>
+    <li class="espace2">Ouvrir l'application : Simple clic > Applications > Graphisme > Numériseur de documents<br />
+	Simple clic > Numériseur de documents (Simple-scan)</li>
+    <p><img class="box9" src="../images/scanner/scanner01.png" alt="..." /></p>
+    <li class="espace2">L'application s'ouvre et recherche un périphérique de numérisation ; ceci à chaque ouverture de l'application.</li>
+    <p><img class="box9" src="../images/scanner/scanner02.png" alt="..." /></p>
+    <li class="espace2">Le scanner a été trouvé, il est prêt à numériser.<br />
+	Le nom du scanner apparaît, dans cet exemple : MEMOscan<br />
+	Le bouton « Numériser » est devenu bleu.</li>
+    <p><img class="box9" src="../images/scanner/scanner03.png" alt="..." /></p>
+    <li class="espace2">Si aucun périphérique de numérisation détecté :<br />
+			Simple clic > icône « Actualiser la liste des périphériques »</li>
+    <p><img class="box9" src="../images/scanner/scanner26.png" alt="..." /></p>
+    <li class="espace2">Si besoin, avant de numériser un document, se reporter au chapitre Scanner :<br />
+			<a class="lienpage" href="../index.html#scanner">Modifier les préférences</a> de numérisation</li>
+    <li class="espace2">Numériser :<br />
+	Simple clic > Numériser</li>
+    <p><img class="box9" src="../images/scanner/scanner04.png" alt="..." /></p>
+    <li id="n2" class="espace2">Le document numérisé s'affiche</li>
+      <ul>
+	<li class="espace4">En N°1 : Simple clic > petit carré pour agrandir ou diminuer la fenêtre</li>
+	<li class="espace4">En N°2 : Une barre de commandes apparaît après avoir scanner le document</li> 
+       <ul>
+        <ol type="a">
+	 <li class="espace4">Nouveau document permet une nouvelle numérisation</li>
+	 <li class="espace4">Faire pivoter la page vers la gauche (sens antihoraire)</li>
+	 <li class="espace4">Faire pivoter la page vers la droite (sens horaire)</li>
+	 <li class="espace4">Recadrer la page sélectionnée</li>
+	 <li class="espace4">Supprimer la page sélectionnée</li>
+       </ol>
+      <p><strong>Nota</strong> : Sélectionner une page pour modification :<br />
+	 Positionner le pointeur de la souris sur la page<br />
+	simple clic sur cette page, elle doit être encadré en bleu.<br />
+        Si la page est encadrée en noir, elle n'est pas sélectionnée.</p>
+      </ul>
+     </ul>
+    <p><img class="box9" src="../images/scanner/scanner05.png" alt="..." /></p>
+    <li class="espace2">Numériser un document avec plusieurs pages :<br />
+	Positionner le nouveau document dans le scanner, puisque dans cet exemple c'est un scanner simple à plat.<br />
+        Puis, simple clic > Numériser</li>
+    <p><img class="box9" src="../images/scanner/scanner06.png" alt="..." /></p>
+    <li class="espace2">La numérisation de la seconde page s'éffectue.</li>
+    <p><img class="box9" src="../images/scanner/scanner07.png" alt="..." /></p>
+    <li class="espace2">Numérisation de la seconde page effectuée.</li>
+    <p><img class="box9" src="../images/scanner/scanner08.png" alt="..." /></p>
+    <li class="espace2">Après avoir numérisé plusieurs pages, il est possible de se déplacer à l'aide du curseur qui est apparu.<br />
+	Positionner le pointeur de la souris dessus, maintenir appuyé et déplacer la souris de droite à gauche.</li>
+    <p><img class="box9" src="../images/scanner/scanner28.png" alt="..." /></p>
+    <li class="espace2">Effectuer des modifications sur une page :<br />
+			Positionner le pointeur de la souris sur la page à modifier, puis, simple clic.<br />
+			La page à modifier est maintenant encadré en bleu<br />
+			Les modifications sont possibles à l'aide des icônes en N°2 
+								(<a class="lienpage" href="#n2">vu plus haut</a>)</li>
+    <p><img class="box9" src="../images/scanner/scanner09.png" alt="..." /></p>
+    <li class="espace2">En cours de numérisation, il est possible de l'arrêter.<br />
+	Simple clic > Arrêter</li>
+    <p><img class="box9" src="../images/scanner/scanner10.png" alt="..." /></p>
+    <li class="espace2">Supprimer la page.<br />
+      <ol type="1">
+	<li class="espace4">Sélectionner la page à supprimer :<br />
+	Positionner le pointeur de la souris sur la page à supprimer, puis simple clic sur cette page.<br />
+	La page sera encadrée en bleu. Dans cet exemple la page 3 est encadrée en bleu.</li>
+	<li class="espace4">Simple clic sur l'icône « Supprimer » (indiqué « e » dans ce MEMO
+								<a class="lienpage" href="#n2">vu plus haut)</a></li>
+      </ol>	
+    <p><img class="box14" src="../images/scanner/scanner11.png" alt="..." /></p>
+    <li class="espace2">La page 3 a été supprimée.</li>
+    <p><img class="box14" src="../images/scanner/scanner12.png" alt="..." /></p>
+  </ul>
+
+  <p class="espace2">Si besoin, se rendre au chapitre Scanner :  
+       		<a class="lienpage" href="../index.html#scanner">Enregistrer</a> le ou les document(s) numérisé(s).</p>
+
+<!-- bandeau fin de page -->
+<div class="container">
+  <div class="box3">
+    <img class="box3" title="" src="../images/logos/tux.png" alt="Tux" />
+  </div>
+  <div class="box4">
+    <a href="../index.html#scanner">
+                                           <img class="box4" title="Accueil" src="../images/logos/tux.png" alt="Tux" /></a>
+    <div class="accueil">Retour</div>
+  </div>
+  <div class="box5">
+     <img class="box5" title="" src="../images/logos/tux.png" alt="Tux" />
+  </div>
+</div>
+ <p>Informations sur le <a class="lienpage" href="infolibre.html" alt="">logiciel libre</a> et 
+                                                                <a class="lienpage" href="merci.html">Merci</a>.</p>
+
+<!-- Marques dépossées -->
+<p class="charte"><a href="https://www.debian.org/trademark" target="_blank" title="https://www.debian.org/trademark">Marques déposées</a> : 
+   Ce site ne fait pas partie de <strong>Debian</strong>, n'est pas produit par le projet 
+                                        <strong>Debian</strong>, ni approuvé par le projet <strong>Debian</strong>.<br />
+   Ce site n'est pas affilié à <strong>Debian</strong>. <strong>Debian</strong> est une marque déposée appartenant 
+                                                                                à Software in the Public Interest, Inc.</p>
+<p class="charte"><a href="https://www.xfce.org/getinvolved" target="_blank" title="https://www.xfce.org/getinvolved">Contribuer</a> : 
+   Ce site ne fait pas partie de <strong>XFCE</strong>, n'est pas produit par le projet 
+                                                <strong>XFCE</strong>, ni approuvé par le projet <strong>XFCE</strong>.<br />
+   Ce site n'est pas affilié à <strong>XFCE</strong>.</p>
+
+<p class="charte">Ce site est juste réalisé par un passionné.</p>
+
+</body>
+</html>
+
+
